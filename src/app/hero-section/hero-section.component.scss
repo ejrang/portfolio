@@ -1,0 +1,40 @@
+@import '../../assets/fonts/font.scss';
+
+.hero-section{
+    display: flex ;
+    background-color: #120b35; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'robotoMono',sans-serif;
+}
+
+.hero-section__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 412px;
+    color: #02f4bf;
+
+    p:first-child{
+        font-size: 54px;
+    }
+
+    p:last-child{
+        font-size: 82px;
+        font-weight: 700;
+    }
+
+    img:last-child{
+        width: 400px;
+        height: 500px;
+    }
+}
+
+.contact_me{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #E15544;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 120px;
+}

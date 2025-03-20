@@ -1,0 +1,68 @@
+@import '../../assets/fonts/font.scss';
+
+header {
+    display: flex;
+    // max-width: 1440px;
+    justify-content: space-between;
+    padding: 44px 52px;
+    color: #E15544;
+    text-align: center;
+    background-color: #120b35;
+
+
+   a{
+    color: #E15544;
+   }
+}
+
+.menu {
+    display: flex;
+    gap: 18px;
+    color: #E15544;
+}
+
+.links{
+    display: flex;
+    gap: 18px;
+    color: #E15544;
+
+    :hover{
+        color: #02F4bf;
+    }
+
+    a{
+        width: 100px;
+        height: 26px;
+        gap: 32px;
+        font-family: 'robotoMono',sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+}
+
+.logo{
+    margin-top: -20px;
+    margin-right: 24px;
+    font-weight: 500;
+    font-size: 58px;
+    cursor: pointer;
+    display: flex;
+}
+
+.language{
+              
+    height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+
+    :hover{
+        color: #02F4bf;
+    }
+
+    span{
+        width: 6px;
+        height: 28px;
+        margin: 8px;
+        background-color: #E15544;
+    }
+}
