@@ -4,7 +4,7 @@ header {
     display: flex;
     // max-width: 1440px;
     justify-content: space-between;
-    padding: 44px 52px;
+    padding: 28px 32px;
     color: #E15544;
     text-align: center;
     background-color: #120b35;
@@ -38,6 +38,10 @@ header {
         font-weight: 500;
         font-size: 22px;
     }
+
+    @media (max-width: 768px){
+            display: none;
+    }
 }
 
 .logo{
@@ -64,5 +68,18 @@ header {
         height: 28px;
         margin: 8px;
         background-color: #E15544;
+    }
+
+    @media (max-width: 768px){
+        display: none;
+}
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 768px){
+        display: block;
     }
 }

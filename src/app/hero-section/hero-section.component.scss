@@ -6,35 +6,64 @@
     justify-content: center;
     align-items: center;
     font-family: 'robotoMono',sans-serif;
+    position: relative;
 }
 
 .hero-section__content{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 412px;
+    align-items: end;
     color: #02f4bf;
 
-    p:first-child{
+    h4{
         font-size: 54px;
     }
 
-    p:last-child{
+    h3:last-child{
         font-size: 82px;
         font-weight: 700;
+        white-space: nowrap;
     }
 
-    img:last-child{
+    div {
+        margin-bottom: 100px;
+
+    }
+}
+
+.hero-section__content__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img:first-child{
         width: 400px;
         height: 500px;
+        margin-left: 84px;
     }
 }
 
 .contact_me{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    p{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     color: #E15544;
     font-weight: 500;
     font-size: 18px;
-    margin-left: 120px;
+    border: 1px solid #02f4bf;
+    padding: 20px 12px;
+    margin-bottom: 12px;
+    }
+
+    img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 }

@@ -7,6 +7,7 @@ import { QuotesSectionComponent } from '../quotes-section/quotes-section.compone
 import { ContactMeSectionComponent } from '../contact-me-section/contact-me-section.component';
 import { FooterComponent } from '../footer/footer.component';
 import { WhyMeSectionComponent } from '../why-me-section/why-me-section.component';
+import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
 
 
 @Component({
@@ -19,7 +20,8 @@ import { WhyMeSectionComponent } from '../why-me-section/why-me-section.componen
      MyProjectsSectionComponent,
      QuotesSectionComponent,
      ContactMeSectionComponent,
-     FooterComponent
+     FooterComponent,
+     HeaderMobileComponent
     ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
