@@ -4,9 +4,17 @@
     display: flex ;
     background-color: #120b35; 
     justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
     font-family: 'robotoMono',sans-serif;
     position: relative;
+    width: 100%;
+    max-width: 1440px;
+
+    @media (max-width: 992px){
+        flex-direction: column;
+        
+}
 }
 
 .hero-section__content{
@@ -14,34 +22,74 @@
     justify-content: center;
     align-items: end;
     color: #02f4bf;
+    margin: 16px;
 
     h4{
         font-size: 54px;
+        font-weight: 500;
+        cursor: pointer;
+
+    @media (min-width: 1200px) and (max-width: 1400px){
+            font-size: 42px;
+    }
+
+    @media (min-width: 1200px){
+        font-size: 28px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px){
+        font-size: 22px;
+    }
+
+    @media (min-width: 450px){
+        font-size: 18px;
+    }
     }
 
     h3:last-child{
         font-size: 82px;
         font-weight: 700;
         white-space: nowrap;
-    }
+        cursor: pointer;
 
-    div {
-        margin-bottom: 100px;
+        
+        @media ((min-width: 1200px) and (max-width: 1400px)){
+        font-size: 70px;
+       }
+
+       @media (min-width: 992px){
+        font-size: 40px;
+        } 
+ 
+        @media (max-width: 992px){
+            font-size: 40px;
+        }
+
+        @media (min-width: 450px){
+            font-size: 32px;
+        }
 
     }
 }
 
-.hero-section__content__icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .hero-section__content__img{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
+//     img{
+//         width: 400px;
+//         height: 500px;
+//         margin-left: 84px;
+//     }
+// }
 
-    img:first-child{
-        width: 400px;
-        height: 500px;
-        margin-left: 84px;
-    }
+.picture{
+    width: 550px;
+
+    @media (max-width: 450px){
+        width: 280px;
+}
 }
 
 .contact_me{
@@ -58,6 +106,7 @@
     border: 1px solid #02f4bf;
     padding: 20px 12px;
     margin-bottom: 12px;
+    cursor: pointer;
     }
 
     img {
@@ -65,5 +114,31 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #02f4bf;
+    opacity: 1;
+
+    &:last-of-type { 
+        display: none; // Zweites Bild unsichtbar
+        }
+
+
     }
+    &:hover {
+        img:last-of-type {
+            display: block;
+           }
+           img:first-of-type {
+            display: none;      
+           }
+           p{
+            color: #02f4bf;
+           }
+    }
+
+    @media (max-width: 992px){
+        display: none;
+}
+
+
 }

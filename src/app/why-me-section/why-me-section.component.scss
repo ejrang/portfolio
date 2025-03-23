@@ -1,0 +1,56 @@
+@import '../../assets/fonts/font.scss';
+
+
+.why-me-section{
+    padding: 50px 50px;
+    display: flex ;
+    background-color: #120b35; 
+    align-items: center;
+    justify-content: center;
+    font-family: 'robotoMono',sans-serif;
+    width: 100%;
+    max-width: 1440px;
+}
+
+p{
+    color: #02f4bf;
+}
+
+.picture{
+    width: 500px;
+}
+
+.whyMe{
+    padding-left: inherit;
+
+    
+    h2{
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+.whyMeSubcategory{
+    justify-content: space-between;
+    margin: 20px 0;
+
+    img{
+        width: 30px;
+    }
+
+}
+
+.whyMyDescription{
+
+    h2{
+        font-size: 54px;
+        font-weight: 500;
+
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
