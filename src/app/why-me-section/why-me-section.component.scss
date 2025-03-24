@@ -14,6 +14,7 @@
 
 p{
     color: #02f4bf;
+    margin: auto;
 }
 
 .picture{
@@ -22,6 +23,7 @@ p{
 
 .whyMe{
     padding-left: inherit;
+    flex-direction: column;
 
     
     h2{
@@ -32,13 +34,28 @@ p{
 }
 
 .whyMeSubcategory{
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px 0;
 
     img{
         width: 30px;
     }
 
+    h2{
+        margin: 8px 0px;
+        font-size: 48px;
+        font-weight: 500;
+        margin-left: 60px;
+    }
+
+}
+
+.bag{
+    margin-left: 130px;
+}
+
+.arrowLoop{
+    margin-left: auto;
 }
 
 .whyMyDescription{
@@ -46,11 +63,29 @@ p{
     h2{
         font-size: 54px;
         font-weight: 500;
+        margin-right: 60px;
 
     }
 
     p{
         font-size: 16px;
         font-weight: 400;
+    }
+}
+
+.whyMeIcons{
+    margin-left: 60px;
+}
+
+.button{
+    margin-left: 300px;
+    
+    button{
+    width: 170px;
+    height: 52px;
+    background-color: aqua;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
     }
 }

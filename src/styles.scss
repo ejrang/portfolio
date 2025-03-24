@@ -20,9 +20,23 @@ h2{
     display: flex;
 }
 
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #120b35; 
+}
+
+.padding{
+    padding: 15px;
+}
+
+.d{
+    flex-direction: column;
 }
