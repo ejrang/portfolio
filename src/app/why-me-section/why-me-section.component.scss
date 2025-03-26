@@ -213,6 +213,8 @@ p {
 
 .remote:hover img:nth-child(2) {
     display: block;
+    width: 26px;
+    height: 32px;
 }
 
 
@@ -306,6 +308,8 @@ p {
         width: 170px;
         height: 52px;
         background-color: aqua;
+        color: #0b042d;
+        font-family: 'robotoMono', sans-serif;
         font-size: 18px;
         font-weight: 500;
         border: none;
@@ -321,6 +325,11 @@ p {
             font-size: 16px;
         }
     }
+
+    :hover{
+        color: #E15544;
+    }
+
 }
 
 @media (max-width: 992px) {
