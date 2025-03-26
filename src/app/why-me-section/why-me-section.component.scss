@@ -1,91 +1,331 @@
-@import '../../assets/fonts/font.scss';
+@font-face {
+    font-family: 'robotoMono';
+    src: url('../../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
 
-
-.why-me-section{
+.why-me-section {
     padding: 50px 50px;
-    display: flex ;
-    background-color: #120b35; 
+    display: flex;
+    background-color: #120b35;
     align-items: center;
     justify-content: center;
-    font-family: 'robotoMono',sans-serif;
+    font-family: 'robotoMono', sans-serif;
     width: 100%;
     max-width: 1440px;
+    overflow: hidden;
+
+    @media (max-width: 992px) {
+        padding: 50px 0;
+    }
 }
 
-p{
+p {
     color: #02f4bf;
-    margin: auto;
+    margin-top: 14px;
+
+    @media (max-width: 1200px) {
+        margin-top: 0;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: revert;
+    }
 }
 
-.picture{
+.picture {
     width: 500px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
 }
 
-.whyMe{
+.whyMe {
     padding-left: inherit;
     flex-direction: column;
 
-    
-    h2{
+    h2 {
         display: flex;
         justify-content: end;
     }
 
+    @media (max-width: 992px) {
+        h2 {
+            justify-content: center;
+        }
+    }
 }
 
-.whyMeSubcategory{
+.whyMeSubcategory {
     justify-content: center;
     margin: 20px 0;
+    position: relative;
+    height: 200px;
 
-    img{
-        width: 30px;
+    img {
+        padding-right: 15px;
     }
 
-    h2{
-        margin: 8px 0px;
+    h2 {
         font-size: 48px;
         font-weight: 500;
-        margin-left: 60px;
+        position: absolute;
+        left: 17%;
     }
 
+    @media (max-width: 1200px) {
+        h2 {
+            left: 0;
+        }
+    }
+
+    @media (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+
+        h2{
+            left: unset;
+            font-size: 28px;
+        }
+    }
 }
 
-.bag{
-    margin-left: 130px;
+.bag {
+    position: absolute;
+    left: 210px;
+    top: 60px;
+
+    img {
+        height: 42px;
+        margin-top: 8px;
+    }
+
+    @media (max-width: 1200px) {
+        left: 115px;
+        top: 72px;
+
+        img {
+            width: 26px;
+            height: 32px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        all: unset;
+        display: flex;
+        align-items: self-end;
+    }
 }
 
-.arrowLoop{
-    margin-left: auto;
+.bag:hover img:first-child {
+    display: none;
+}
+.bag:hover img:nth-child(2) {
+    display: block;
 }
 
-.whyMyDescription{
+.bagDiv{
+    justify-content: unset;
+}
 
-    h2{
+.location {
+    img {
+        width: 32px;
+        height: 42px;
+        margin-top: 8px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img:last-child{
+            width: 19px;
+            height: 9px;
+
+            :hover{
+             display: block;
+        }
+        }
+    }
+
+    :hover{
+            img:last-child{
+                display: block;
+            }
+    }
+    @media (max-width: 1200px) {
+        margin-left: -6%;
+
+        img {
+            width: 26px;
+            height: 32px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        all: unset;
+        align-items: flex-end;
+        display: flex;
+    }
+}
+
+.arrowLoop {
+    position: absolute;
+    right: -170%;
+
+    @media (max-width: 1200px) {
+        img {
+            height: 45px !important;
+        }
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.remote {
+    position: absolute;
+    bottom: 19px;
+    left: -12px;
+
+    @media (max-width: 1200px) {
+        left: -76px;
+
+        img {
+            width: 26px;
+            height: 32px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        position: static;
+    }
+}
+
+.remoteIcon:hover {
+    display: none;
+}
+
+.e:hover {
+    display: block;
+}
+
+
+
+.arrowDown {
+    position: absolute;
+    left: -39px;
+    top: 60px;
+
+    @media (max-width: 1200px) {
+        left: -54%;
+    }
+
+    @media (max-width: 992px) {
+        left: -30%;
+        top: -45%;
+        width: 20px;
+        height: 48px !important;
+    }
+}
+
+.arrowTop {
+    position: absolute;
+    right: -103px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+}
+
+.whyMyDescription {
+
+    h2 {
         font-size: 54px;
         font-weight: 500;
-        margin-right: 60px;
-
+        // margin-top: 36px;
     }
 
-    p{
+    p {
         font-size: 16px;
         font-weight: 400;
+        text-align: end;
+        padding: 25px 0;
+    }
+
+    @media (max-width: 1200px) {
+        h2 {
+            font-size: 54px;
+        }
+
+        p {
+            padding: 10px 0;
+        }
+    }
+
+    @media (max-width: 992px) {
+        margin: unset;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p{
+            text-align: center;
+            padding: 0 16px;
+        }
     }
 }
 
-.whyMeIcons{
-    margin-left: 60px;
+.whyMeIcons {
+    position: relative;
+
+    @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 20px;
+            height: 26px;
+        }
+    }
+
 }
 
-.button{
-    margin-left: 300px;
-    
-    button{
-    width: 170px;
-    height: 52px;
-    background-color: aqua;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
+.button {
+    margin-right: 120px;
+    justify-content: flex-end;
+
+    button {
+        width: 170px;
+        height: 52px;
+        background-color: aqua;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+    }
+
+    @media (max-width: 992px) {
+        justify-content: center;
+        margin-right: unset;
+
+        .button{
+            width: 130px;
+            height: 40px;
+            font-size: 16px;
+        }
     }
 }
+
+@media (max-width: 992px) {
+    br {
+      display: none;
+    }
+  }
