@@ -14,7 +14,7 @@
     font-family: 'robotoMono', sans-serif;
     width: 100%;
     max-width: 1440px;
-    overflow: hidden;
+    // overflow: hidden;
 
     @media (max-width: 992px) {
         padding: 50px 0;
@@ -207,11 +207,11 @@ p {
     }
 }
 
-.remoteIcon:hover {
+.remote:hover img:first-child {
     display: none;
 }
 
-.e:hover {
+.remote:hover img:nth-child(2) {
     display: block;
 }
 
@@ -228,7 +228,6 @@ p {
 
     @media (max-width: 992px) {
         left: -30%;
-        top: -45%;
         width: 20px;
         height: 48px !important;
     }
