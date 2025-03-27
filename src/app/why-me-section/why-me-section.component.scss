@@ -17,7 +17,7 @@
     overflow: hidden;
 
     @media (max-width: 992px) {
-        padding: 50px 90px;
+        // padding: 50px 90px;
     }
 }
 
@@ -191,6 +191,7 @@ p {
 
     @media (max-width: 1200px) {
         right: -100% !important;
+        display: none;
     }
 
     @media (max-width: 1440px) {
@@ -218,15 +219,15 @@ p {
     }
 }
 
-.remote:hover img:first-child {
-    display: none;
-}
+// .remote:hover img:first-child {
+//     display: none;
+// }
 
-.remote:hover img:nth-child(2) {
-    display: block;
-    width: 26px;
-    height: 32px;
-}
+// .remote:hover img:nth-child(2) {
+//     display: block;
+//     width: 26px;
+//     height: 32px;
+// }
 
 
 
@@ -244,6 +245,11 @@ p {
         width: 20px;
         height: 48px !important;
     }
+
+    @media (max-width: 450px) {
+        display: none;
+    }
+
 }
 
 .arrowTop {
@@ -282,6 +288,7 @@ p {
 
     @media (max-width: 992px) {
         margin: unset;
+        border: 3px dashed yellow;
 
         h2 {
             font-size: 32px;

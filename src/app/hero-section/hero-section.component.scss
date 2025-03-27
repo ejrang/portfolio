@@ -88,11 +88,11 @@
     width: 550px;
 
     @media (max-width: 450px){
-        width: 280px;
+        width: 280px !important;
 }
 
-@media (max-width: 992px){
-    // width: inherit;
+@media (max-width: 560px){
+    width: unset;
 }
 }
 
