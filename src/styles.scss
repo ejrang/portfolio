@@ -13,7 +13,7 @@ h2{
 }
 
 .d-none{
-    display: none;
+    display: none !important;
 }
 
 .flex{
@@ -39,4 +39,44 @@ body{
 
 .d{
     flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.button {
+    // margin-right: 120px;
+    justify-content: flex-end;
+
+    button {
+        width: 170px;
+        height: 52px;
+        background-color: aqua;
+        color: #0b042d;
+        font-family: 'robotoMono', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+    }
+
+    @media (max-width: 992px) {
+        justify-content: center;
+        margin-right: unset;
+
+        .button{
+            width: 130px;
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+
+    :hover{
+        color: #E15544;
+    }
+
+
+    // @media (max-width: 1940px) {
+    // margin-right: -2%;
+    // }
 }
