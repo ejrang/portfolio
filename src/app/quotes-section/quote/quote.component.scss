@@ -1,0 +1,23 @@
+.quote{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    font-family: 'robotoMono', sans-serif;
+    padding: 20px 0 0 70px;
+
+    h3{
+        color: #E15544;
+    }
+
+    p{
+        color: #02f4bf;
+        font-weight: 400;
+    }
+
+    span{
+        color: #02f4bf;
+        margin-top: 18px;
+        font-weight: 100;
+    }
+
+}
