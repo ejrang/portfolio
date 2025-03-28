@@ -1,13 +1,17 @@
-<div>
-    <div><img src="./assets/icons/myProjects/join.png" alt=""></div>
 
-    <div>
-        <h3>Join</h3>
-        <p> Angular | Firebase</p>
-       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam reprehenderit officia nesciunt ut! Autem, nisi culpa unde minus omnis temporibus officia fugit rem dolorum, explicabo quasi cumque dolor eum! Minus.</span>
+@for (project of  project; track $index) {
+    <div class="projectDiv flex-box" [ngClass]="{'reverse': $index == 1}">
+    <div class="projectImg"><img src="{{project.img}}" alt="">
+    </div>
+
+    <div class="projectInfo col-md-6">
+        <h3>{{project.name}}</h3>
+        <p> {{project.skills}}</p>
+       <span>{{project.text}}</span>
     <div>
         <button>GitHub</button>
-        <button>>LiveTest</button>
+        <button>LiveTest</button>
     </div>
     </div>
 </div>
+}

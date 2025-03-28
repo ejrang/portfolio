@@ -1,0 +1,60 @@
+
+.projectImg{
+
+    img{
+        width: 550px;
+    }
+
+}
+
+.projectInfo{
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    justify-content: space-around;
+    font-family: 'robotoMono';
+
+
+    h3 {
+        color: #02F4BF;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    p{
+        color: #02F4BF;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    span{
+        color: #02F4BF;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    div {
+        button{
+        text-decoration: none;
+        padding: 16px 50px;
+    }
+    :first-child{
+        color: #E15544;
+        background-color: #120B35;
+        border: 1px solid #02F4BF;
+        margin-right: 18px;
+    }
+
+    :last-child{
+        color: #120B35;
+        background-color:#02F4BF;
+        border: 1px solid #02F4BF;
+        margin-right: 18px;
+    }
+}
+}
+
+.projectDiv{
+
+}

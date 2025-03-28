@@ -75,6 +75,9 @@ body{
         color: #E15544;
     }
 
+    .reverse {
+        flex-direction: row-reverse; 
+      }
 
     // @media (max-width: 1940px) {
     // margin-right: -2%;

@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
+import { MyProjectsSectionComponent } from '../my-projects-section.component';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-project-component',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './project-component.component.html',
-  styleUrl: './project-component.component.scss'
+  styleUrl: './project-component.component.scss',
 })
 export class ProjectComponentComponent {
-
-   project = [
+  project = [
     {
       img: './assets/icons/myProjects/join.png',
       name: 'Join',
