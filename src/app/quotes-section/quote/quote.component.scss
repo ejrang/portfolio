@@ -5,8 +5,23 @@
     font-family: 'robotoMono', sans-serif;
     padding: 20px 0 0 70px;
 
+    @media(max-width: 1200px){
+        width: 150px;
+    }
+
+    @media(max-width: 992px){
+        border: 1px solid #02f4bf;
+        padding: 15px 46px;
+        margin: 0 10px;
+    }
+
     h3{
         color: #E15544;
+
+        @media(max-width: 992px){
+            font-size: 24px;
+            white-space: nowrap;
+        }
     }
 
     p{

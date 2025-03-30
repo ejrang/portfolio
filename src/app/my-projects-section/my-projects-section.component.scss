@@ -2,6 +2,14 @@
     flex-direction: column;
     max-width: 1440px;
     padding: 50px 50px;
+
+    @media(max-width: 768px){
+        padding: 50px 25px;
+    }
+
+    @media(max-width: 768px){
+        padding: 50px 10px;
+    }
 }
 
 .subline{
@@ -9,5 +17,9 @@ h2{
     font-family: 'robotoMono';
     font-weight: 500;
     font-size: 54px;
+
+    @media(max-width: 450px){
+        font-size: 32px;
+    }
 }
 }

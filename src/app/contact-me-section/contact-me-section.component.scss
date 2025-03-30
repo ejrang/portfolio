@@ -1,0 +1,148 @@
+.contact-me-section {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    padding: 50px 50px;
+    font-family: 'robotoMono', sans-serif;
+}
+
+// .text-container{
+//     margin-left: 100px;
+// }
+
+.consent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    p{   
+    width: 950px;
+    margin-left: 6px;
+    }
+
+    &:hover {
+        img:last-of-type {
+           display: none;   
+           }
+           img:first-of-type {
+            display: block !important;
+           }
+    }
+
+}
+  
+
+.contact-me-section_infos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    position: relative;
+    // margin-left: 18px;
+    // max-width: 1015px;
+    
+    h2{
+      font-size: 54px;
+      font-weight: 500;
+    }
+
+    p{
+        color: #02F4BF;
+    }
+}
+
+.arrowTop{
+    position: absolute;
+    right: 8%;
+    bottom: 6px;
+}
+
+.contact-me-adress{
+    white-space: nowrap;
+    letter-spacing: 3px;
+
+
+    img{
+        width: 22px;
+    }
+
+    p{
+    margin-left: 16px;
+    }
+}
+
+form{
+    margin-top: 18px;
+    // max-width: 1170px;
+}
+
+.data{
+
+    input {
+        width: 460px;
+        height: 50px;
+        margin: 0px 24px 42px 0px;
+        background-color: #120B35;
+        border: 1px solid #02f4bf;
+        color: #02f4bf;
+
+        @media(max-width: 1200px){
+            width: 300px;
+        }
+    }
+
+}
+
+.infoText{
+    margin-top: 12px;
+    margin-left: 6px;
+    font-size: 18px;
+    width: 500px;
+    letter-spacing: 2px;
+    /* font-weight: 400; */
+    font-family: 'robotoMono';
+    margin-top: 12px;
+    margin-left: 6px;
+}
+
+.message{
+
+textarea{
+    width: 595px;
+    height: 145px;
+    background-color: #120B35;
+    border: 1px solid #02f4bf;
+    color: #02f4bf;
+
+    @media(max-width: 1200px){
+        width: 400px;
+    }
+}
+}
+
+.submit{
+    display: flex;
+    justify-content: end;
+
+    input {
+            width: 104px;
+            height: 52px;
+            background-color: #120B35;
+            border: 1px solid #02f4bf;
+            color: #02f4bf;
+
+            &:hover{
+                color: #E15544;
+            }
+        }
+    
+}
+
+::placeholder {
+display: flex;
+padding-left: 12px;
+}
+
+textarea::placeholder {
+padding-top: 12px;
+}

@@ -1,1 +1,62 @@
-<p>contact-me-section works!</p>
+<div class="contact-me-section">
+    <div class="contact-me-section_infos">
+        <div class="text-container">
+            <div class="flex" style="align-items: center;">
+        <h2>Contact Me</h2>
+        <img src="../../assets/icons/contactMe/Arrow.png" alt="" style="margin-left: 24px;">
+            </div>
+        <p class="infoText">If you have any questions or would like to get in touch, please fill out the form below.
+
+        </p>
+       </div>
+
+       <div class="contact-me-adress">
+       <div class="flex-box">
+            <img src="./assets/icons/contactMe/email.png" alt="">
+            <p>Email: ejran1web.de</p>
+       </div>
+
+       <div class="flex-box">
+            <img src="./assets/icons/contactMe/phone.png" alt="">
+            <p>Tel: 0176 4348355</p>
+       </div>
+       </div>
+
+       <img src="../../assets/icons/contactMe/arrowTop.png" alt="" class="arrowTop">
+    </div>
+<!-- 
+    <img src="../../assets/icons/contactMe/arrowTop.png" alt=""> -->
+
+    <form (ngSubmit)="onsubmit()">
+        <div class="flex" style="justify-content: center;">
+        <div>
+        <div class="data">
+            <input [(ngModel)]="contactData.name" type="text" id="name" placeholder="Your Name" [(ngModel)]="contactData.name" name="name" required>
+        </div>
+
+        <div class="data">
+            <input [(ngModel)]="contactData.email" type="email" id="email"  placeholder="Your Email" [(ngModel)]="contactData.email" name="email" required>
+        </div>
+    </div>
+
+        <div class="message">
+            <textarea [(ngModel)]="contactData.message" id="message"  placeholder="Your Message" [(ngModel)]="contactData.message" name="message" required></textarea>
+        </div>
+     </div>
+
+    <div class="consent">
+        <div class="flex-box">
+            <img src="../../assets/icons/contactMe/boxHover.png" alt="boxHover" class="d-none">
+            <img src="../../assets/icons/contactMe/box.png" alt="box">
+           <p>Ive read the propertiers Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi sed a maiores dicta explicabo incidunt iusto, impedit, qui numquam deleniti cum ad quia sit obcaecati blanditiis in provident?</p>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Send">
+        </div>
+    </div>
+
+    </form>
+
+
+</div>

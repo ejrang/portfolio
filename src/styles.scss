@@ -31,6 +31,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #120b35; 
+    overflow-x: hidden;
 }
 
 .padding{
@@ -74,10 +75,6 @@ body{
     :hover{
         color: #E15544;
     }
-
-    .reverse {
-        flex-direction: row-reverse; 
-      }
 
     // @media (max-width: 1940px) {
     // margin-right: -2%;

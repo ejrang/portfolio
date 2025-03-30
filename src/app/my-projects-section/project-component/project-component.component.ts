@@ -15,19 +15,19 @@ export class ProjectComponentComponent {
     {
       img: './assets/icons/myProjects/join.png',
       name: 'Join',
-      skills: 'Angular, TypeScript, HTML, CSS',
+      skills: 'Angular |  TypeScript |  HTML | CSS',
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.',
     },
     {
       img: './assets/icons/myProjects/elPolloLoco.png',
       name: 'El Pollo Loco',
-      skills: 'JavaScript, HTML, CSS',
+      skills: 'JavaScript | HTML | CSS',
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.',
     },
     {
       img: './assets/icons/myProjects/elPolloLoco.png',
       name: 'Pokedex',
-      skills: 'JavaScript, HTML, CSS',
+      skills: 'JavaScript | HTML |CSS',
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.',
     }
   ];
