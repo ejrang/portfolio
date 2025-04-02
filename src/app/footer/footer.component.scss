@@ -1,0 +1,57 @@
+.footer{
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 50px 50px;
+    font-family: 'robotoMono', sans-serif;
+}
+
+p{
+    color: #E15544;
+}
+
+.icon{
+    font-family: 'robotoMono';
+
+    :first-child{
+        font-size: 54px;
+    }
+
+    :last-child{
+        font-size: 12px;
+    }
+
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+
+    :first-child{
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    :last-child{
+        font-size: 14px;
+    }
+}
+
+.conntect{
+    margin-top: 55px;
+    img{
+        margin-right: 12px;
+    }
+}
+
+.github{
+    &:hover{
+        .githubHover{
+         display: block !important;
+        }
+
+        display: none !important;
+    }
+}

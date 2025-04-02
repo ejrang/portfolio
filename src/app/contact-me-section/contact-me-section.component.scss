@@ -5,6 +5,11 @@
     // justify-content: center;
     padding: 50px 50px;
     font-family: 'robotoMono', sans-serif;
+
+    @media(max-width: 768px){
+        // max-width: 350px;
+        padding: 50px 0;
+   }
 }
 
 // .text-container{
@@ -15,10 +20,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1085px;
+    color: #02F4BF;
 
     p{   
-    width: 950px;
     margin-left: 6px;
+    font-size: 12px;
     }
 
     &:hover {
@@ -30,6 +37,62 @@
            }
     }
 
+    @media(max-width: 1200px){
+        max-width: 895px;
+    }
+
+    @media(max-width: 992px){
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 55px 0px 55px;
+    }
+
+    @media(max-width: 768px){
+        padding: 20px 0px 0px 0px;
+    }
+}
+
+.privacy-policy{
+    @media(max-width: 992px){
+        width: 555px;
+    }
+
+    @media(max-width: 768px){
+        width: 350px;
+    }
+
+    @media(max-width: 450px){
+        max-width: 275px;
+     }
+}
+
+.contact-me-adress-mobile{
+    @media(max-width: 992px){
+        display: block !important;
+        margin: 90px 0 0 0 ;
+        font-size: 20px;
+        color: #02F4BF;
+
+        div{
+            flex-direction: column;
+            margin: 12px;
+        }
+
+        img{
+            width: 40px;
+            margin: 24px 0 20px 0;
+
+            
+       @media(max-width: 992px){
+        width: 30px;
+      }
+    }
+    
+    @media(max-width: 450px){
+        font-size: 18px;
+     }
+ 
+}
 }
   
 
@@ -44,10 +107,30 @@
     h2{
       font-size: 54px;
       font-weight: 500;
+
+      
+    @media(max-width: 768px){
+        font-size: 42px;
+    }
+
+    @media(max-width: 450px){
+        font-size: 32px;
+    }
     }
 
     p{
         color: #02F4BF;
+    }
+
+    @media(max-width: 992px){
+        justify-content: center;
+    }
+}
+
+.contactMe{
+    @media(max-width: 992px){
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -55,6 +138,33 @@
     position: absolute;
     right: 8%;
     bottom: 6px;
+
+    @media(max-width: 992px){
+        width: 34px;
+        right: 20%;
+        bottom: -345%;
+     }
+
+     @media(max-width: 768px){
+     width: 34px;
+     right: 15%;
+     bottom: -322%;
+     }
+
+     
+     @media(max-width: 450px){
+        width: 29px;
+        right: 15%;
+        bottom: -416%;
+        }
+}
+
+.arrowDown{
+    margin-left: 24px;
+
+    @media(max-width: 992px){
+           display: none;
+    }
 }
 
 .contact-me-adress{
@@ -69,6 +179,17 @@
     p{
     margin-left: 16px;
     }
+
+    @media(max-width: 992px){
+       display: none;
+    }
+}
+
+.contactForm{
+    @media(max-width: 992px){
+        flex-direction: column;
+        align-items: center;
+     }
 }
 
 form{
@@ -89,6 +210,20 @@ form{
         @media(max-width: 1200px){
             width: 300px;
         }
+
+        @media(max-width: 992px){
+            width: 555px;
+            margin: 0px 0px 25px 0px;
+        }
+
+        
+       @media(max-width: 768px){
+            width: 350px;
+       }
+
+       @media(max-width: 450px){
+        max-width: 275px;
+     }
     }
 
 }
@@ -103,6 +238,19 @@ form{
     font-family: 'robotoMono';
     margin-top: 12px;
     margin-left: 6px;
+
+    @media(max-width: 992px){
+       text-align: center;
+    }
+
+    @media(max-width: 768px){
+        width: 350px;
+   }
+
+   @media(max-width: 450px){
+    font-size: 16px;
+    max-width: 300px;
+}
 }
 
 .message{
@@ -115,14 +263,23 @@ textarea{
     color: #02f4bf;
 
     @media(max-width: 1200px){
-        width: 400px;
+        width: 555px;
     }
+
+    @media(max-width: 768px){
+        width: 350px;
+   }
+
+   @media(max-width: 450px){
+    max-width: 275px;
+ }
 }
 }
 
 .submit{
     display: flex;
     justify-content: end;
+    margin-top: 12px;
 
     input {
             width: 104px;
