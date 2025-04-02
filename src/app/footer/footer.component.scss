@@ -47,11 +47,12 @@ p{
 }
 
 .github{
-    &:hover{
-        .githubHover{
-         display: block !important;
-        }
+    fill: black;
+    height:30px;
+    color: blue;
+     
+  }
 
-        display: none !important;
-    }
+.github:hover{
+  fill: aqua;
 }
