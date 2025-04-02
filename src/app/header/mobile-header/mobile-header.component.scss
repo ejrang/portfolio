@@ -1,0 +1,40 @@
+.mobile-header{
+    width: 100%;
+    height: 838px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(181deg, #13074E 0%, #1D0A79F2 95%);
+}
+
+.links-mobile{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    align-items: anchor-center;
+    font-weight: 500;
+    gap: 90px;
+    color: #e15544;
+    margin-top: 100px;
+}
+
+.close{
+    display: flex;
+    justify-content: end;
+    padding: 12px 12px;
+
+    img{
+        width: 40px;
+        cursor: pointer;
+    }
+}
+
+a{
+    color: #e15544;
+    font-family: 'robotoMono';
+    margin: 0 12px;
+
+    &:hover{
+        color: #02f4bf;
+    }
+}

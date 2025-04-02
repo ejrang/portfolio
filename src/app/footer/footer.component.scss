@@ -3,6 +3,12 @@
     max-width: 1440px;
     padding: 50px 50px;
     font-family: 'robotoMono', sans-serif;
+
+    @media(max-width: 768px){
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: unset;
+    }
 }
 
 p{
@@ -18,6 +24,11 @@ p{
 
     :last-child{
         font-size: 12px;
+    }
+
+    @media(max-width: 768px){
+        order: 2;
+        margin-top: 54px;
     }
 
 }
@@ -37,6 +48,11 @@ p{
     :last-child{
         font-size: 14px;
     }
+
+    @media(max-width: 768px){
+        order: 1;
+        margin-top: 60px;
+    }
 }
 
 .conntect{
@@ -44,15 +60,19 @@ p{
     img{
         margin-right: 12px;
     }
+
+    @media(max-width: 768px){
+        order: 3;
+    }
 }
 
 .github{
-    fill: black;
-    height:30px;
-    color: blue;
-     
+    width: 50px;
+    gap: 12px;
+    transition: 0.3s;
   }
 
 .github:hover{
   fill: aqua;
+
 }
