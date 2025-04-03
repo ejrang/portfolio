@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Output} from '@angular/core';
 import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 
 @Component({
@@ -10,5 +10,6 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
   styleUrls: ['./header.component.scss', '../../assets/fonts/font.scss']
 })
 export class HeaderComponent {
+  isOpen: boolean = false;
 
 }

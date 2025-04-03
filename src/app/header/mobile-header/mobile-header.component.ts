@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './mobile-header.component.html',
   styleUrl: './mobile-header.component.scss'
 })
 export class MobileHeaderComponent {
- closeHeader = document.querySelector('.close');
- header = document.querySelector(".mobile-header")
+  @Output() isOpen = new EventEmitter<void>();
 
- close(){
-this.header?.classList.add('d-none');
- }
+close() {
+  this.isOpen.emit();
+
+}
+
 }
