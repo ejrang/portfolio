@@ -3,7 +3,7 @@
         <div class="logo"> EN</div>
 
     <div class="links">
-        <a href="#">Why me</a>
+        <a href="#">{{'header.whyMe' | translate }}</a>
         <a href="#">Skills</a>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
@@ -11,16 +11,16 @@
     </div>
 
     <div class="language">
-        <a href="#">DE</a>
+        <a href="#" (click)="changeLanguage('de')">DE</a>
         <span>|</span>
-        <a href="#">EN</a>
+        <a href="#" (click)="changeLanguage('en')">EN</a>
     </div>
 
     <div class="menu-icon" (click)= "isOpen = true">
-        <img src="../../assets/icons/header/menu.png" alt="">
+        <img src="./assets/icons/header/menu.png" alt="">
     </div>
 </header>
 
 @if (isOpen) {
-<app-mobile-header class="d-none"></app-mobile-header>
+<app-mobile-header class="d-none" (isOpen)="isOpen = $event"></app-mobile-header>
 }

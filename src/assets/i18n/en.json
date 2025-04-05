@@ -1,0 +1,43 @@
+{
+    "header": {
+        "whyMe": "Why Me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "whyMe": {
+        "whyMe": "Why Me",
+        "text": "About Me",
+        "projects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In mollitia ratione id excepturi exercitationem nam, quis, nulla blanditiis optio porro enim non tempore voluptatem! Blanditiis nisi nobis sapiente alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum quaerat unde deserunt, corporis quae quasi. Tempora ratione asperiores architecto molestiae aliquid id assumenda eveniet eos, rem officia delectus cumque",
+        "IAm": "I am",
+        "loation": "Based in Korschenbroich",
+        "telocation": "Open to relocation",
+        "button": "Let's talk"
+    },
+    "mySkills": {
+        "mySkills": "My Skills",
+        "text": "I am always open to learning new technologies and improving myself."
+    },
+    "myProjects": {
+        "myProjects": "My Projects",
+        "joinDescription": "I am a developer with a passion for technology and innovation.",
+        "elPolloLocoDescription": "El Pollo Loco is a fictional restaurant chain specializing in Mexican grilled dishes. The website provides information about the restaurant, the menu, and the locations.",
+        "pokedexDescription": "The Pokedex is a fictional database containing information about Pokemon. The website offers a search function to find Pokemon and display their attributes."
+    },
+    "comment": {
+        "h1": "Need a team player?",
+        "span": "Here's what my colleagues say about me",
+        "commentNoah": "Noah is a talented developer with a keen eye for detail. He helped me create my website, and I couldn't be happier.",
+        "commentEveln": "Here are some of my latest works.",
+        "commentJames": "Noah is a talented developer with a keen eye for detail. He helped me create my website, and I couldn't be happier."
+    },
+    "contact": {
+        "heading": "Contact",
+        "description": "If you have questions or want to get in touch with me, please fill out the form.",
+        "placeholderName": "Your Name",
+        "placeholderEmail": "Your Email",
+        "placeholderMessage": "Your Message",
+        "privacy-policy": "I have read the privacy policy and accept the processing of my data.",
+        "button": "Send"
+    }
+}
