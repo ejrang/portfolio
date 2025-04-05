@@ -10,8 +10,11 @@
         "text": "Über mich",
         "projects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.In el In mollitia ratione id excepturi exercitationem nam, quis, nulla blanditiis optio porro enim non tempore voluptatem! Blanditiis nisi nobis sapiente alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum quaerat unde deserunt, corporis quae quasi. Tempora ratione asperiores architecto molestiae aliquid id assumenda eveniet eos, rem officia delectus cumque",
         "IAm": "Ich bin",
-        "loation": "Wohnhaft in Korschenbroich",
-        "telocation": "offen für telocation",
+        "location": " Korschenbroich",
+        "locatetIn":"Wohnhaft in",
+        "telocation": "telocation",
+        "openTo": "ofen für",
+        "remote": "remote Arbeit",
         "button": "Lass uns reden"
     },
     "mySkills": {
@@ -21,7 +24,7 @@
     "myProjects": {
         "myProjects": "Meine Projekte",
         "joinDescription": "Ich bin ein Entwickler mit Leidenschaft für Technologie und Innovation.",
-        "elPolloLocoDescription": "El Pollo Loco ist eine fiktive Restaurantkette, die sich auf mexikanische Grillgerichte spezialisiert hat. Die Website bietet Informationen über das Restaurant, das Menü und die Standorte.",
+        "elPolloLocoDescription": "El Pollo Loco ist eine fiktive Restaurant-Website, die Informationen über das Restaurant, seine Speisekarte und seine Standorte enthält. Die Website bietet eine ansprechende Benutzeroberfläche und ermöglicht es Benutzern, mehr über das Restaurant zu erfahren.",
         "pokedexDescription": "Der Pokedex ist eine fiktive Datenbank, die Informationen über Pokemon enthält. Die Website bietet eine Suchfunktion, um Pokemon zu finden und ihre Eigenschaften anzuzeigen."
     },
     "comment": {
@@ -37,7 +40,9 @@
         "placeholderName":"Dein Name",
         "placeholderEmail":"Deine E-Mail",
         "placeholderMessage":"Deine Nachicht",
-        "privacy-policy":"Ich habe die Datenschutzbestimmungen gelesen und akzeptiert dei Verarbeitung meiner Daten.",
-        "button":"senden"
+        "privacy-policy-pretext":"Ich habe die",
+        "privacy-policy-posttext":" gelesen und akzeptiert dei Verarbeitung meiner Daten.",
+        "privacy-policy":" Datenschutzbestimmungen",
+        "button":"Senden"
     }
 }

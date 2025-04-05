@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-quote',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './quote.component.html',
   styleUrl: './quote.component.scss'
 })
@@ -13,17 +14,17 @@ export class QuoteComponent {
     {
       name: 'Noah Mueller',
       project: 'Project Shakie',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.',
+      text: 'comment.commentNoah',
     },
     {
       name: 'Evelyn Marx',
       project: 'Project El Pollo Loco',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.',
+      text: 'comment.commentEveln',
     },
     {
       name: 'James Rugman',
       project: 'Project Join',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.',
+      text: 'comment.commentJames',
     }
   ];
 }

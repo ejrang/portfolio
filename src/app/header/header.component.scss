@@ -36,6 +36,9 @@ header {
         font-family: 'robotoMono',sans-serif;
         font-weight: 500;
         font-size: 22px;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 5px 15px;
     }
 
     @media (max-width: 992px){

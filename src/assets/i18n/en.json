@@ -10,8 +10,10 @@
         "text": "About Me",
         "projects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In mollitia ratione id excepturi exercitationem nam, quis, nulla blanditiis optio porro enim non tempore voluptatem! Blanditiis nisi nobis sapiente alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum quaerat unde deserunt, corporis quae quasi. Tempora ratione asperiores architecto molestiae aliquid id assumenda eveniet eos, rem officia delectus cumque",
         "IAm": "I am",
-        "loation": "Based in Korschenbroich",
-        "telocation": "Open to relocation",
+        "location": "Korschenbroich",
+        "locatetIn":"locatet in",
+        "telocation": "relocation",
+        "remote": "remote work",
         "button": "Let's talk"
     },
     "mySkills": {
@@ -37,7 +39,9 @@
         "placeholderName": "Your Name",
         "placeholderEmail": "Your Email",
         "placeholderMessage": "Your Message",
-        "privacy-policy": "I have read the privacy policy and accept the processing of my data.",
+        "privacy-policy-pretext": "I have read the",
+        "privacy-policy-posttext": " and accept the processing of my data.",
+        "privacy-policy": " privacy policy",
         "button": "Send"
     }
 }

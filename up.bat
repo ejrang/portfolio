@@ -1,5 +1,5 @@
 git add .
-git commit -m "add translation template"
+git commit -m "finish translation"
 git push
 
 

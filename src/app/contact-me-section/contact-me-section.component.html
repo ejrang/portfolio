@@ -2,11 +2,10 @@
     <div class="contact-me-section_infos">
         <div class="text-container">
             <div class="flex contactMe " style="align-items: center;">
-        <h2> Contact Me</h2>
+        <h2> {{ 'contact.heading' | translate }}</h2>
         <img src="../../assets/icons/contactMe/Arrow.png" alt="" class="arrowDown">
             </div>
-        <p class="infoText">If you have any questions or would like to get in touch, please fill out the form below.
-
+        <p class="infoText">{{ 'contact.description' | translate }}
         </p>
        </div>
 
@@ -31,11 +30,11 @@
         <div class="flex contactForm">
         <div>
         <div class="data">
-            <input [(ngModel)]="contactData.name" type="text" id="name" placeholder="Your Name" [(ngModel)]="contactData.name" name="name" required>
+            <input [(ngModel)]="contactData.name" type="text" id="name" placeholder="{{ 'contact.placeholderName' | translate }}" [(ngModel)]="contactData.name" name="name" required>
         </div>
 
         <div class="data">
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"  placeholder="Your Email" [(ngModel)]="contactData.email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"  placeholder="{{ 'contact.placeholderEmail' | translate }}" [(ngModel)]="contactData.email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             @if (!email.valid && email.touched) {
                 <span style="color: red;">Please enter a message!</span>
             }
@@ -43,7 +42,7 @@
     </div>
 
         <div class="message">
-            <textarea  #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message"  placeholder="Your Message" [(ngModel)]="contactData.message" name="message" required ></textarea>
+            <textarea  #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message"  placeholder="{{ 'contact.placeholderMessage' | translate }}" [(ngModel)]="contactData.message" name="message" required ></textarea>
             @if (!message.valid && message.touched) {
                 <span style="color: red;">Please enter a message!</span>
             }
@@ -52,13 +51,13 @@
 
     <div class="consent">
         <div class="flex-box privacy-policy">
-            <img src="../../assets/icons/contactMe/boxHover.png" alt="boxHover" class="d-none">
-            <img src="../../assets/icons/contactMe/box.png" alt="box">
-           <p>Ive read the privacy-policy and agree to the processing of my data as outlined</p>
+            <img src="./assets/icons/contactMe/boxHover.png" alt="boxHover" class="d-none">
+            <img src="./assets/icons/contactMe/box.png" alt="box">
+           <p>{{'contact.privacy-policy-pretext'|translate}}<span style="color: #E15544;">{{'contact.privacy-policy'|translate}}</span>{{'contact.privacy-policy-posttext'|translate}}</p>
         </div>
 
         <div class="submit">
-            <input type="submit" value="Send">
+            <input type="submit" value="{{'contact.button'|translate}}">
         </div>
     </div>
 
