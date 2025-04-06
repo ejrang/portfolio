@@ -1,5 +1,5 @@
 git add .
-git commit -m "finish translation"
+git commit -m "CSS correction"
 git push
 
 

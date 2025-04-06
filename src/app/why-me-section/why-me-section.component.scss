@@ -13,11 +13,15 @@
     justify-content: center;
     font-family: 'robotoMono', sans-serif;
     // width: 100%;
-    max-width: 1440px;
+    max-width: 1300px;
     overflow: hidden;
 
     @media (max-width: 992px) {
         // padding: 50px 90px;
+    }
+
+    @media (max-width: 450px) {
+        padding: 0px 15px;
     }
 }
 
@@ -26,11 +30,12 @@ p {
     margin-top: 14px;
 
     @media (max-width: 1200px) {
-        margin-top: 0;
+        font-size: 12px;
     }
 
     @media (max-width: 992px) {
         margin-top: revert;
+        font-size: unset;
     }
 }
 
@@ -62,30 +67,42 @@ p {
 
 .whyMeSubcategory {
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0 10px 0px;
     position: relative;
     height: 200px;
+    width: 100%;
 
-    img {
-        padding-right: 15px;
+    img :nth-child(2)  {
+        width: 25px;
+        height: 40px;
+        
     }
 
     h2 {
         font-size: 48px;
         font-weight: 500;
         position: absolute;
-        left: 10%;
+        left: 1%;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1300px) {
         h2 {
             left: 0;
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        h2 {
+            font-size: 24px;
         }
     }
 
     @media (max-width: 992px) {
         display: flex;
         justify-content: center;
+        height: unset;
+        margin: 50px 0;
 
         h2{
             left: unset;
@@ -96,8 +113,9 @@ p {
 
 .bag {
     position: absolute;
-    left: 210px;
+    left: 200px;
     top: 60px;
+    transition: transform 0.3s ease;
 
     img {
         height: 42px;
@@ -105,9 +123,7 @@ p {
     }
 
     @media (max-width: 1200px) {
-        left: 115px;
-        top: 72px;
-
+        left: 130px;
         img {
             width: 26px;
             height: 32px;
@@ -117,7 +133,7 @@ p {
     @media (max-width: 992px) {
         all: unset;
         display: flex;
-        align-items: self-end;
+        align-items: center
     }
 }
 
@@ -129,20 +145,15 @@ p {
 }
 
 .bagDiv{
-    justify-content: unset;
+    // justify-content: unset;
 }
 
 .location {
-    img {
-        width: 32px;
-        height: 42px;
-        margin-top: 8px;
-    }
-
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
 
         img:last-child{
             width: 19px;
@@ -158,9 +169,13 @@ p {
             img:last-child{
                 display: block;
             }
+
+            .locationHover{
+                display: block;
+            }
+            
     }
     @media (max-width: 1200px) {
-        margin-left: 30%;
 
         img {
             width: 26px;
@@ -170,18 +185,59 @@ p {
 
     @media (max-width: 992px) {
         all: unset;
-        align-items: flex-end;
+        align-items: center;
         display: flex;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+}
+
+.locationHover{
+    display: none;
+    transition: transform 0.3s ease;
+
+    :hover{
+        transition: transform 0.9s ease;
+        display: block;
+    }
+}
+
+.locationSvg{
+    @media(max-width: 1200px) {
+        width: 26px;
+    }
+}
+
+.bagSvg:hover svg {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+}
+
+.bagSvg svg {
+    transition: transform 0.3s ease;
+    @media(max-width: 1200px) {
+        width: 26px;
+    }
+}
+
+.remoteSvg{
+    transition: transform 0.3s ease;
+    @media(max-width: 1200px) {
+        width: 30px;
     }
 }
 
 .arrowLoop {
-    position: absolute;
-    right: -200%;
+    // position: absolute;
+    // right: -200%;
+    
 
     @media (max-width: 1200px) {
         img {
             height: 45px !important;
+            display: none !important;
         }
     }
 
@@ -189,7 +245,7 @@ p {
         display: none;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1100px) {
         right: -100% !important;
         display: none;
     }
@@ -206,7 +262,7 @@ p {
     left: -12px;
 
     @media (max-width: 1200px) {
-        left: 20px;
+        left: 0px;
 
         img {
             width: 26px;
@@ -219,6 +275,19 @@ p {
     }
 }
 
+.remoteSvgWrapper .remoteSvgHover {
+    display: none;
+}
+
+.remoteSvgWrapper:hover .remoteSvg {
+    display: none;
+}
+
+.remoteSvgWrapper:hover .remoteSvgHover {
+    width: 30px;
+    transition: transform 0.3s ease;
+    display: block !important;
+}
 // .remote:hover img:first-child {
 //     display: none;
 // }
@@ -243,7 +312,12 @@ p {
     @media (max-width: 992px) {
         left: -30%;
         width: 20px;
+        top: -70px;
         height: 48px !important;
+    }
+
+    @media (max-width: 768px) {
+        left: -8%;
     }
 
     @media (max-width: 450px) {
@@ -253,12 +327,56 @@ p {
 }
 
 .arrowTop {
-    position: absolute;
-    right: -103px;
+    width: 25px;
+    height: 40px;
 
     @media (max-width: 992px) {
-      display: none;
+        transform: scaleY(-1);
+        width: 60px !important;
+        height: 85px !important;
     }
+
+        @media (max-width:768px){
+        width: 40px !important;
+        height: 52px !important;
+    }
+
+    @media (max-width:450px){
+       display: none;
+    }
+
+}
+
+.arrowContainer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 180px;
+    bottom: 2px;
+    right: -200px;
+
+    @media (max-width: 1300px) {
+        justify-content: space-around;
+        width: 250px;
+        bottom: 2px;
+        right: -225px;
+    }
+
+    @media (max-width: 1200px) {
+        bottom: 30px;
+        right: -200px;
+    }
+
+    @media (max-width: 992px) {
+        bottom: -50px;
+
+    }
+
+    @media (max-width: 768px) {
+        bottom: -50px;
+        right: -150px;
+    }
+
 }
 
 .whyMyDescription {
@@ -315,19 +433,18 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 50px 0;
 
         img{
             width: 20px;
             height: 26px;
         }
     }
-
 }
-
-
 
 @media (max-width: 992px) {
     br {
       display: none;
     }
   }
+

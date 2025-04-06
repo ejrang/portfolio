@@ -11,11 +11,16 @@
             <div class="whyMeSubcategory flex">
                 <h2 class="flex">{{'whyMe.IAm' | translate }}</h2>
                 <div class="whyMeIcons">
-   
+                <div>
                     <div class="flex location">
-                        <div>
-                          <img src="./assets/icons/whyMe/location.png" alt="location.png">
-                          <img src="./assets/icons/whyMe/locationHover.png" alt="locationHover.png" class="d-none">
+                        <div class="margin">
+                            <svg class="locationSvg" xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 34 41" fill="none">
+                                <path d="M0 17.0423C0 25.2266 9.33767 35.1965 16.7174 41C23.1935 35.6429 32.6064 27.0866 33.2842 17.0423C33.796 9.45643 27.3352 -0.219418 16.7174 0.00379216C3.99109 0.271327 0 10.2715 0 17.0423Z" fill="#02F4BF"/>
+                                <path d="M20.5319 15.1473C20.4642 17.3487 18.7087 19.0823 16.6109 19.0194C14.5131 18.9565 12.8673 17.1208 12.9351 14.9194C13.0028 12.718 14.7584 10.9843 16.8562 11.0473C18.954 11.1102 20.5997 12.9458 20.5319 15.1473Z" fill="#E15544"/>
+                                </svg>
+                          <svg class="locationHover" xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9" fill="none">
+                            <path d="M16.9378 1C23.7553 4.65217 18.1052 8 10.5747 8C3.04423 8 -2.6059 4.34783 3.75715 1" stroke="#02F4BF" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
                          </div>
                         <p>{{'whyMe.locatetIn' | translate }}<br>{{'whyMe.location' | translate }}</p>
                     </div>
@@ -23,21 +28,46 @@
                 <div class="flex-box bagDiv">
                 <img src="./assets/icons/whyMe/arrowDown.png" alt="" class="arrowDown">
                     <div class="flex bag">
-                        <img src="./assets/icons/whyMe/bag.png" alt="bag.png" class="">
-                        <img src="./assets/icons/whyMe/bagHover.png" alt="bagHover.png" class="d-none">
+                        <div class="bagSvg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="49" viewBox="0 0 30 49" fill="none" class="margin">
+                            <ellipse cx="3.46154" cy="3.30082" rx="3.46154" ry="3.30082" transform="matrix(0.990909 0.134535 -0.169599 0.985513 3.42773 41.5383)" fill="#E15544"/>
+                            <ellipse cx="3.46154" cy="3.30082" rx="3.46154" ry="3.30082" transform="matrix(0.990909 0.134535 -0.169599 0.985513 20.6377 41.5383)" fill="#E15544"/>
+                            <rect x="7.92285" y="1" width="14.1538" height="13.525" rx="1" stroke="#E15544" stroke-width="2"/>
+                            <rect y="9.87964" width="30" height="33.8728" rx="2" fill="#02F4BF"/>
+                            </svg>
+                        </div>
+                
                         <p> {{'whyMe.openTo' | translate }} <br> {{'whyMe.telocation' | translate }}</p>
                     </div>
                 </div>
 
-                    <div class="flex-box remote">
+                    <div class="flex-box remote" style="white-space: nowrap;">
+
+                      <div class="remoteSvgWrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none" class="margin remoteSvg">
+                            <path d="M20.7158 23.282C20.7158 22.5916 21.2755 22.032 21.9658 22.032H48.4395C49.1299 22.032 49.6895 22.5916 49.6895 23.282V40.3201H20.7158V23.282Z" fill="#1E0A7D" stroke="#02F4BF" stroke-width="1.5"/>
+                            <path d="M16.5938 42.6372H53.6846V44.1331C53.6846 45.7899 52.3414 47.1331 50.6846 47.1331H19.5938C17.9369 47.1331 16.5938 45.7899 16.5938 44.1331V42.6372Z" fill="#02F4BF"/>
+                            <rect x="32.3291" y="43.7612" width="6.74379" height="1.12396" rx="0.561982" fill="#140754"/>
+                            <path d="M22.5934 13.6573C16.0933 12.6573 13.5935 16.1573 12.8191 22.1719" stroke="#E15544" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M23.0937 8.15729C13.0305 7.19145 7.33583 13.1603 6.93232 22.0371" stroke="#E15544" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
                    
-                        <img src="./assets/icons/whyMe/remote.png" alt="remote" class="remoteIcon">
-                        <img src="./assets/icons/whyMe/remoteHover.png" alt="remoteHover" class="d-none e">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="56" viewBox="0 0 62 56" fill="none" class="margin d-none remoteSvgHover">
+                            <path d="M28.7158 31.2822C28.7158 30.5919 29.2755 30.0322 29.9658 30.0322H56.4395C57.1299 30.0322 57.6895 30.5919 57.6895 31.2822V48.3203H28.7158V31.2822Z" fill="#1E0A7D" stroke="#02F4BF" stroke-width="1.5"/>
+                            <path d="M24.5938 50.6375H61.6846V52.1333C61.6846 53.7902 60.3414 55.1333 58.6846 55.1333H27.5938C25.9369 55.1333 24.5938 53.7902 24.5938 52.1333V50.6375Z" fill="#02F4BF"/>
+                            <rect x="40.3291" y="51.7615" width="6.74379" height="1.12396" rx="0.561982" fill="#140754"/>
+                            <path d="M31.0936 10.6575C18.2971 9.39372 9.59367 17.6574 9.59354 30.1574" stroke="#E15544" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M30.5934 21.6576C24.0933 20.6576 21.5935 24.1575 20.8191 30.1721" stroke="#E15544" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M31.0937 16.1575C21.0305 15.1917 15.3358 21.1605 14.9323 30.0374" stroke="#E15544" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
                         <p>{{'whyMe.openTo' | translate }}  <br>{{'whyMe.remote' | translate }}</p>
-                  
+                    </div>
+                    <div class="arrowContainer">
                     <img src="./assets/icons/whyMe/arrowTop.png" alt="arrowTop" class="arrowTop">
                     <div class="arrowLoop">
                         <img src="./assets/icons/whyMe/arrowLoop.png" alt="arrowDown">
+                    </div>
                       </div>
                     </div>
 
