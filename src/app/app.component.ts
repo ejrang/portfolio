@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ContactMeSectionComponent } from './contact-me-section/contact-me-section.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TranslateModule } from '@ngx-translate/core';
 import {TranslateService} from "@ngx-translate/core";

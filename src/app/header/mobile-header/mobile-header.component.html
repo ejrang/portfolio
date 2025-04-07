@@ -1,12 +1,12 @@
-<div class="mobile-header">
-    <div  class="close" (click)= "close()"><img src="../../../assets/icons/header/close.png" alt="close"></div>
+<div class="mobile-header" [class.closing]="isClosing">
+    <div  class="close" (click)= "close()"><img src="./assets/icons/header/close.png" alt="close"></div>
 
     <div>
-        <div class="links-mobile">
-            <a href="#">{{'header.whyMe' | translate }}</a>
-            <a href="#">{{'header.skills' | translate }}</a>
-            <a href="#">{{'header.projects' | translate }}</a>
-            <a href="#">{{'header.contact' | translate }}</a>
+        <div class="links-mobile" (click)= "close()">
+            <a href="#whyMe">{{'header.whyMe' | translate }}</a>
+            <a href="#skills">{{'header.skills' | translate }}</a>
+            <a href="#projects">{{'header.projects' | translate }}</a>
+            <a href="#contact">{{'header.contact' | translate }}</a>
             <div>
                 <a href="#">DE</a>
                 <span>|</span>

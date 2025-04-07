@@ -284,9 +284,12 @@ p {
 }
 
 .remoteSvgWrapper:hover .remoteSvgHover {
-    width: 30px;
     transition: transform 0.3s ease;
     display: block !important;
+
+    @media(max-width: 1200px) {
+        width: 30px;
+    }
 }
 // .remote:hover img:first-child {
 //     display: none;

@@ -11,8 +11,13 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class MobileHeaderComponent {
   @Output() isOpen = new EventEmitter<boolean>();
+  isClosing = false;
 
-  close(){
-    this.isOpen.emit(false);
+  close() {
+    this.isClosing = true; // Schließen-Animation starten
+    setTimeout(() => {
+      this.isOpen.emit(false); // Nach der Animation die Komponente schließen
+      this.isClosing = false; // Zustand zurücksetzen
+    }, 500); // Dauer der Animation (0.5s)
   }
 }

@@ -45,8 +45,10 @@ p{
         font-weight: 400;
     }
 
-    :last-child{
-        font-size: 14px;
+    a{
+        font-size: 14px !important;
+        cursor: pointer;
+        margin-left: 24px;
     }
 
     @media(max-width: 768px){

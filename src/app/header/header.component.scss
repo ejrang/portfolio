@@ -91,7 +91,44 @@ header {
 }
 
 app-mobile-header{
+
     @media(max-width: 992px){
        display: block !important;
     }
- }
+
+    position: fixed; /* Fixiert die Komponente */
+    top: 0;
+    right: 0;
+    width: 100%; /* Breite der mobilen Header-Komponente */
+    background-color: white; /* Hintergrundfarbe */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Schatten für visuelle Tiefe */
+    animation: slideInFromRight 0.5s ease-out; /* Animation anwenden */
+    z-index: 1000; 
+
+    &.closing {
+        animation: slideOutToRight 0.5s ease-out; /* Animation für das Schließen */
+    }
+}
+
+ @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%); /* Start außerhalb des Bildschirms */
+      opacity: 0; /* Unsichtbar */
+    }
+    to {
+      transform: translateX(0); /* Endposition */
+      opacity: 1; /* Sichtbar */
+    }
+  }
+  
+
+  @keyframes slideOutToRight {
+    from {
+        transform: translateX(0); /* Startposition */
+        opacity: 1; /* Sichtbar */
+    }
+    to {
+        transform: translateX(100%); /* Außerhalb des Bildschirms */
+        opacity: 0; /* Unsichtbar */
+    }
+}

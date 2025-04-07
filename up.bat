@@ -1,5 +1,5 @@
 git add .
-git commit -m "CSS correction"
+git commit -m "add svg in privacy policy"
 git push
 
 

@@ -1,4 +1,4 @@
-<div class="contact-me-section">
+<div class="contact-me-section" id="contact">
     <div class="contact-me-section_infos">
         <div class="text-container">
             <div class="flex contactMe " style="align-items: center;">
@@ -21,10 +21,10 @@
        </div>
        </div>
 
-       <img src="../../assets/icons/contactMe/arrowTop.png" alt="" class="arrowTop">
+      <a  href="#header"><img src="./assets/icons/contactMe/arrowTop.png" alt="" class="arrowTop"></a> 
     </div>
-<!-- 
-    <img src="../../assets/icons/contactMe/arrowTop.png" alt=""> -->
+
+    <!-- <img src="../../assets/icons/contactMe/arrowTop.png" alt=""> -->
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="flex contactForm">
@@ -51,8 +51,16 @@
 
     <div class="consent">
         <div class="flex-box privacy-policy">
-            <img src="./assets/icons/contactMe/boxHover.png" alt="boxHover" class="d-none">
-            <img src="./assets/icons/contactMe/box.png" alt="box">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="boxSvg">
+                <mask id="mask0_3021_1225" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#797EF3"/>
+                </mask>
+                <g mask="url(#mask0_3021_1225)">
+                <path d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z" fill="#E15544"/>
+                </g>
+                </svg>
+
            <p>{{'contact.privacy-policy-pretext'|translate}}<span style="color: #E15544;">{{'contact.privacy-policy'|translate}}</span>{{'contact.privacy-policy-posttext'|translate}}</p>
         </div>
 

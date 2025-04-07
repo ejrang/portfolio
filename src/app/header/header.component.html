@@ -1,12 +1,12 @@
-<header>
+<header id="heade">
     <div class="menu">
         <div class="logo"> EN</div>
 
     <div class="links">
-        <a href="#">{{'header.whyMe' | translate }}</a>
-        <a href="#">{{'header.skills' | translate }}</a>
-        <a href="#">{{'header.projects' | translate }}</a>
-        <a href="#">{{'header.contact' | translate }}</a>
+        <a href="#whyMe">{{'header.whyMe' | translate }}</a>
+        <a href="#skills">{{'header.skills' | translate }}</a>
+        <a href="#projects">{{'header.projects' | translate }}</a>
+        <a href="#contact">{{'header.contact' | translate }}</a>
     </div>
     </div>
 
@@ -16,7 +16,7 @@
         <a href="#" (click)="changeLanguage('en')">EN</a>
     </div>
 
-    <div class="menu-icon" (click)= "isOpen = true">
+    <div class="menu-icon burger-menu-btn" (click)= "isOpen = true">
         <img src="./assets/icons/header/menu.png" alt="">
     </div>
 </header>
