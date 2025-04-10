@@ -6,9 +6,10 @@
         "contact": "Kontakt"
     },
     "whyMe": {
+        "contact": "Kontaktiere mich",
         "whyMe": "Warum ich",
         "text": "Über mich",
-        "projects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.In el In mollitia ratione id excepturi exercitationem nam, quis, nulla blanditiis optio porro enim non tempore voluptatem! Blanditiis nisi nobis sapiente alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum quaerat unde deserunt, corporis quae quasi. Tempora ratione asperiores architecto molestiae aliquid id assumenda eveniet eos, rem officia delectus cumque",
+        "projects": "Ich bin ein engagierter und talentierter Entwickler mit einer Leidenschaft für Technologie und Innovation. Ich bringe kreative Lösungen und ein hohes Maß an Professionalität in jedes Projekt ein. Meine Fähigkeit, komplexe Probleme zu lösen und mich schnell an neue Technologien anzupassen, macht mich zu einem wertvollen Mitglied in jedem Team.",
         "IAm": "Ich bin",
         "location": " Korschenbroich",
         "locatetIn":"Wohnhaft in",
@@ -23,8 +24,8 @@
     },
     "myProjects": {
         "myProjects": "Meine Projekte",
-        "joinDescription": "Ich bin ein Entwickler mit Leidenschaft für Technologie und Innovation.",
-        "elPolloLocoDescription": "El Pollo Loco ist eine fiktive Restaurant-Website, die Informationen über das Restaurant, seine Speisekarte und seine Standorte enthält. Die Website bietet eine ansprechende Benutzeroberfläche und ermöglicht es Benutzern, mehr über das Restaurant zu erfahren.",
+        "joinDescription": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu",
+        "elPolloLocoDescription": "Jump and Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
         "pokedexDescription": "Der Pokedex ist eine fiktive Datenbank, die Informationen über Pokemon enthält. Die Website bietet eine Suchfunktion, um Pokemon zu finden und ihre Eigenschaften anzuzeigen."
     },
     "comment": {
@@ -32,7 +33,7 @@
         "span":"Hier was meinne Kollegen über mich sagen", 
         "commentNoah": "Noah ist ein talentierter Entwickler mit einem scharfen Auge für Details. Er hat mir geholfen, meine Website zu erstellen und ich könnte nicht zufriedener sein.",
         "commentEveln": "Hier sind einige meiner neuesten Arbeiten.",
-        "commentJames": "Noah ist ein talentierter Entwickler mit einem scharfen Auge für Details. Er hat mir geholfen, meine Website zu erstellen und ich könnte nicht zufriedener sein."
+        "commentJames": "Ejran ist ein talentierter Entwickler mit einem scharfen Auge für Details. Er hat mir geholfen, meine Website zu erstellen und ich könnte nicht zufriedener sein."
     },
     "contact": {
         "heading": "Kontakt",

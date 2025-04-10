@@ -12,12 +12,12 @@
        <div class="contact-me-adress">
        <div class="flex-box">
             <img src="./assets/icons/contactMe/email.png" alt="">
-            <p>Email: ejran1web.de</p>
+            <a  href="mailto:ejran1web.de">Email: ejran1web.de</a>
        </div>
 
        <div class="flex-box">
             <img src="./assets/icons/contactMe/phone.png" alt="">
-            <p> Tel:0176 4348355</p>
+            <a href="tel:01764348355"> Tel:0176 4348355</a>
        </div>
        </div>
 
@@ -26,10 +26,11 @@
 
     <!-- <img src="../../assets/icons/contactMe/arrowTop.png" alt=""> -->
 
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="flex contactForm">
         <div>
-        <div class="data">
+        <div class="data"> 
             <input [(ngModel)]="contactData.name" type="text" id="name" placeholder="{{ 'contact.placeholderName' | translate }}" [(ngModel)]="contactData.name" name="name" required>
         </div>
 
@@ -52,19 +53,15 @@
     <div class="consent">
         <div class="flex-box privacy-policy">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="boxSvg">
-                <mask id="mask0_3021_1225" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#797EF3"/>
-                </mask>
-                <g mask="url(#mask0_3021_1225)">
-                <path d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z" fill="#E15544"/>
-                </g>
-                </svg>
+            <div class="checkbox-container" (change)="privacyPolicy = !privacyPolicy" >
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox" class="custom-checkbox">✓</label>
+            </div>
 
            <p>{{'contact.privacy-policy-pretext'|translate}}<span style="color: #E15544;">{{'contact.privacy-policy'|translate}}</span>{{'contact.privacy-policy-posttext'|translate}}</p>
         </div>
 
-        <div class="submit">
+        <div class="submit" [ngClass]="{'submitClick': privacyPolicy}">
             <input type="submit" value="{{'contact.button'|translate}}">
         </div>
     </div>
@@ -72,16 +69,16 @@
     </form>
 
     <div class="contact-me-adress-mobile d-none">
-        <div class="flex-box">
+        <div class="flex-box" href="mailto:ejran1web.de">
              <img src="./assets/icons/contactMe/email.png" alt="">
-             <p>ejran1web.de</p>
+             <a href="mailto:ejran1web.de">ejran1web.de</a>
         </div>
  
         <div class="flex-box">
              <img src="./assets/icons/contactMe/phone.png" alt="">
-             <p>0176 4348355</p>
+             <a href="tel:01764348355">0176 4348355</a>
         </div>
         </div>
 
-
+        
 </div>

@@ -9,6 +9,7 @@
     position: relative;
     width: 100%;
     max-width: 1440px;
+    margin-top: -30px;
 
     @media (max-width: 992px){
         flex-direction: column;
@@ -25,7 +26,7 @@
     margin: 16px;
 
     h4{
-        // font-size: 42px;
+        font-size: 42px;
         font-weight: 500;
         cursor: pointer;
 
@@ -33,9 +34,9 @@
             font-size: 42px;
     }
 
-    @media (min-width: 1200px){
-        font-size: 28px;
-    }
+    // @media (min-width: 1200px){
+    //     font-size: 28px;
+    // }
 
     @media (max-width: 992px){
         font-size: 22px;
@@ -100,8 +101,10 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    margin-bottom: 150px;
+    transition: all 0.3s ease-in-out;
 
-    p{
+    a:first-child{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     color: #E15544;
@@ -111,10 +114,13 @@
     padding: 20px 12px;
     margin-bottom: 12px;
     cursor: pointer;
+
+    &:hover {
+            color: #02f4bf;
+            }
     }
 
     img {
-    // position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -126,23 +132,57 @@
         display: none; // Zweites Bild unsichtbar
         }
 
+        &:hover {
+            :last-of-type {
+                display: block;
+                color: #02f4bf;
+               }
+            :first-of-type {
+                display: none;      
+               }
+        }
+    }
 
+.arrow{
+    padding: 8px 6px;
+    &:hover{
+    border: 1px solid aqua!important;
+
+
+    path{
+        fill: aqua !important;
     }
-    &:hover {
-        img:last-of-type {
-            display: block;
-           }
-           img:first-of-type {
-            display: none;      
-           }
-           p{
-            color: #02f4bf;
-           }
     }
+
+}
+
 
     @media (max-width: 992px){
         display: none;
 }
-
-
 }
+
+
+.intro-text {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 80px;
+  
+    h4, h3 {
+      margin: 0;
+      line-height: 1.4;
+    }
+  
+    // ::ng-deep .typed-cursor {
+    //   font-weight: bold;
+    //   color: red;
+    //   animation: blink 0.7s infinite;
+    // }
+  
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  }
+  

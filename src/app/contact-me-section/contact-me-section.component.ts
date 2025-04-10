@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact-me-section.component.scss'
 })
 export class ContactMeSectionComponent {
-
+  privacyPolicy = false;
   http = inject(HttpClient);
 
 contactData: any ={
@@ -24,7 +24,7 @@ contactData: any ={
 mailTest = true;
 
 post = {
-  endPoint: 'https://deineDomain.de/sendMail.php',
+  endPoint: 'https://ejran-nahimzadah.developerakademie.net/sendMail.php',
   body: (payload: any) => JSON.stringify(payload),
   options: {
     headers: {
@@ -35,7 +35,10 @@ post = {
 };
 
 onSubmit(ngForm: NgForm) {
+
+  
   if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    console.log("Läuft");
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {

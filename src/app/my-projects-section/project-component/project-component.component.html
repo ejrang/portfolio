@@ -1,10 +1,11 @@
 
 @for (project of  project; track $index) {
-    <div class="projectDiv flex-box" [ngClass]="{'reverse': $index == 1}">
-    <div class="projectImg"><img src="{{project.img}}" alt="">
+    <div class="projectDiv flex-box" [ngClass]="{'reverse': $index == 1}"  [attr.data-aos]="project.animation">
+        
+    <div class="projectImg"><img src="{{project.img}}" alt="img" >
         <div class="btn flex-box">
-            <button>GitHub</button>
-            <button>LiveTest</button>
+                <button (click)="navigateTo(project.gitHub)">GitHub</button>>
+                <button (click)="navigateTo(project.liveTest)">LiveTest</button>
         </div>
     </div>
 

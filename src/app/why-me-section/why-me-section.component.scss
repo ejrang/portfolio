@@ -12,13 +12,8 @@
     align-items: center;
     justify-content: center;
     font-family: 'robotoMono', sans-serif;
-    // width: 100%;
     max-width: 1300px;
     overflow: hidden;
-
-    @media (max-width: 992px) {
-        // padding: 50px 90px;
-    }
 
     @media (max-width: 450px) {
         padding: 0px 15px;
@@ -124,6 +119,7 @@ p {
 
     @media (max-width: 1200px) {
         left: 130px;
+
         img {
             width: 26px;
             height: 32px;
@@ -142,10 +138,6 @@ p {
 }
 .bag:hover img:nth-child(2) {
     display: block;
-}
-
-.bagDiv{
-    // justify-content: unset;
 }
 
 .location {
@@ -230,10 +222,6 @@ p {
 }
 
 .arrowLoop {
-    // position: absolute;
-    // right: -200%;
-    
-
     @media (max-width: 1200px) {
         img {
             height: 45px !important;
@@ -291,17 +279,6 @@ p {
         width: 30px;
     }
 }
-// .remote:hover img:first-child {
-//     display: none;
-// }
-
-// .remote:hover img:nth-child(2) {
-//     display: block;
-//     width: 26px;
-//     height: 32px;
-// }
-
-
 
 .arrowDown {
     position: absolute;
@@ -379,7 +356,6 @@ p {
         bottom: -50px;
         right: -150px;
     }
-
 }
 
 .whyMyDescription {
@@ -409,7 +385,7 @@ p {
 
     @media (max-width: 992px) {
         margin: unset;
-        border: 3px dashed yellow;
+        // border: 3px dashed yellow;
 
         h2 {
             font-size: 32px;
