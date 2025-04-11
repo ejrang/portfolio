@@ -16,6 +16,8 @@ import AOS from 'aos';
 })
 export class AppComponent implements AfterViewInit {
   title = 'portfolio';
+  headerIsOpen: boolean = false;
+
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     

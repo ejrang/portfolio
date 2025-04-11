@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { HeroSectionComponent } from '../hero-section/hero-section.component';
 import { MySkillsSectionComponent } from '../my-skills-section/my-skills-section.component';
@@ -7,6 +7,7 @@ import { QuotesSectionComponent } from '../quotes-section/quotes-section.compone
 import { ContactMeSectionComponent } from '../contact-me-section/contact-me-section.component';
 import { FooterComponent } from '../footer/footer.component';
 import { WhyMeSectionComponent } from '../why-me-section/why-me-section.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -20,11 +21,12 @@ import { WhyMeSectionComponent } from '../why-me-section/why-me-section.componen
      QuotesSectionComponent,
      ContactMeSectionComponent,
      FooterComponent,
+     CommonModule
     ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-
+ @Output() isOpen = new EventEmitter<boolean>();
 
 }

@@ -1,5 +1,5 @@
 git add .
-git commit -m "add animation"
+git commit -m "header fixed"
 git push
 
 

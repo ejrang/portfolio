@@ -3,12 +3,18 @@
 header {
     display: flex;
     // max-width: 1440px;
+    position: unset;
     justify-content: space-between;
     padding: 28px 32px;
     color: #E15544;
     text-align: center;
     background-color: #120b35;
-    
+    background: linear-gradient(
+        181deg,
+        #120b35 50%,            // Hauptfarbe (dunkel)
+        rgba(18, 11, 53, 0.6) 100%  // dieselbe Farbe, aber durchsichtig
+      );
+      
    a{
     color: #E15544;
    }
