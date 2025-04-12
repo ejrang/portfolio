@@ -21,3 +21,6 @@
     </div>
 </header>
 
+@if (isOpen) {
+<app-mobile-header class="d-none" (isOpen)="isOpen.isOpen= $event"></app-mobile-header>
+}
