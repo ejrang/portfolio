@@ -25,6 +25,15 @@
     color: #02f4bf;
     margin: 16px;
 
+    div:last-child {
+        @media(max-width: 992px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     h4{
         font-size: 42px;
         font-weight: 500;
@@ -34,9 +43,9 @@
             font-size: 42px;
     }
 
-    // @media (min-width: 1200px){
-    //     font-size: 28px;
-    // }
+    @media (max-width: 1200px){
+        font-size: 30px;
+    }
 
     @media (max-width: 992px){
         font-size: 22px;
@@ -153,15 +162,12 @@
         fill: aqua !important;
     }
     }
-
 }
-
 
     @media (max-width: 992px){
         display: none;
 }
 }
-
 
 .intro-text {
     flex-direction: column;

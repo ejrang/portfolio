@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { HeroSectionComponent } from '../hero-section/hero-section.component';
 import { MySkillsSectionComponent } from '../my-skills-section/my-skills-section.component';
@@ -8,6 +8,7 @@ import { ContactMeSectionComponent } from '../contact-me-section/contact-me-sect
 import { FooterComponent } from '../footer/footer.component';
 import { WhyMeSectionComponent } from '../why-me-section/why-me-section.component';
 import { CommonModule } from '@angular/common';
+import { ToggleService } from '../toggle.service';
 
 
 @Component({
@@ -27,6 +28,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
- @Output() isOpen = new EventEmitter<boolean>();
+  isOpen = inject(ToggleService)
+
+// ngOnInit() {
+//   this.isOpen.subscribe(value => {
+//     console.log('isOpen:', value);
+//   });
+// }
+
+ 
 
 }

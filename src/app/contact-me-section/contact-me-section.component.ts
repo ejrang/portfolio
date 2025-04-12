@@ -15,6 +15,12 @@ export class ContactMeSectionComponent {
   privacyPolicy = false;
   http = inject(HttpClient);
 
+  emailTouched = false;
+
+onBlurEmail() {
+  this.emailTouched = true;
+}
+
 contactData: any ={
   name: '',
   email: '',

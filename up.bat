@@ -1,5 +1,5 @@
 git add .
-git commit -m "header fixed"
+git commit -m "add global variable"
 git push
 
 

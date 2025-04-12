@@ -28,45 +28,89 @@
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
-        <div class="flex contactForm">
-        <div>
-        <div class="data"> 
-            <input [(ngModel)]="contactData.name" type="text" id="name" placeholder="{{ 'contact.placeholderName' | translate }}" [(ngModel)]="contactData.name" name="name" required>
-        </div>
-
+  
+    <div class="flex contactForm">
+      <div>
         <div class="data">
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"  placeholder="{{ 'contact.placeholderEmail' | translate }}" [(ngModel)]="contactData.email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-            @if (!email.valid && email.touched) {
-                <span style="color: red;">Please enter a message!</span>
-            }
+          <input
+            [(ngModel)]="contactData.name"
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="{{ 'contact.placeholderName' | translate }}"
+          />
         </div>
+  
+        <div class="data">
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            (blur)="emailTouched = true"
+            [placeholder]="
+              !email.valid && emailTouched
+                ? 'Please enter a valid email!'
+                : ('contact.placeholderEmail' | translate)
+            "
+          />
+          @if (!email.valid && email.touched) {
+            <span style="color: red;">Please enter a valid email!</span>
+          }
+        </div>
+      </div>
+  
+      <div class="message">
+        <textarea
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          name="message"
+          id="message"
+          required
+          minlength="4"
+          placeholder="{{ 'contact.placeholderMessage' | translate }}"
+        ></textarea>
+  
+        @if (!message.valid && message.touched) {
+          <span style="color: red;">Please enter a message!</span>
+        }
+      </div>
     </div>
-
-        <div class="message">
-            <textarea  #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message"  placeholder="{{ 'contact.placeholderMessage' | translate }}" [(ngModel)]="contactData.message" name="message" required ></textarea>
-            @if (!message.valid && message.touched) {
-                <span style="color: red;">Please enter a message!</span>
-            }
-        </div>
-     </div>
-
+  
     <div class="consent">
-        <div class="flex-box privacy-policy">
-
-            <div class="checkbox-container" (change)="privacyPolicy = !privacyPolicy" >
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox" class="custom-checkbox">✓</label>
-            </div>
-
-           <p>{{'contact.privacy-policy-pretext'|translate}}<span style="color: #E15544;">{{'contact.privacy-policy'|translate}}</span>{{'contact.privacy-policy-posttext'|translate}}</p>
+      <div class="flex-box privacy-policy">
+        <div class="checkbox-container">
+          <input
+            type="checkbox"
+            id="myCheckbox"
+            name="privacyPolicy"
+            [(ngModel)]="privacyPolicy"
+            required
+          />
+          <label for="myCheckbox" class="custom-checkbox">✓</label>
         </div>
-
-        <div class="submit" [ngClass]="{'submitClick': privacyPolicy}">
-            <input type="submit" value="{{'contact.button'|translate}}">
-        </div>
+  
+        <p>
+          {{ 'contact.privacy-policy-pretext' | translate }}
+          <span style="color: #E15544;">{{ 'contact.privacy-policy' | translate }}</span>
+          {{ 'contact.privacy-policy-posttext' | translate }}
+        </p>
+      </div>
+  
+      <div class="submit" [ngClass]="{'submitClick': contactForm.valid && privacyPolicy}">
+        <input
+          type="submit"
+          [disabled]="!contactForm.valid || !privacyPolicy"
+          value="{{ 'contact.button' | translate }}"
+        />
+      </div>
     </div>
-
-    </form>
+  </form>
+  
 
     <div class="contact-me-adress-mobile d-none">
         <div class="flex-box" href="mailto:ejran1web.de">

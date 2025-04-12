@@ -1,6 +1,7 @@
-import { Component, Output} from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output} from '@angular/core';
 import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ToggleService } from '../toggle.service';
 
 @Component({
   selector: 'app-header',
@@ -11,8 +12,8 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss', '../../assets/fonts/font.scss']
 })
 export class HeaderComponent {
-  isOpen: boolean = false;
-
+   isOpen = inject(ToggleService)
+  
   constructor(private translate: TranslateService) {}
 
   changeLanguage(lang: string) {

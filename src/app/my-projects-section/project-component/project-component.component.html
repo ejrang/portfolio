@@ -4,7 +4,7 @@
         
     <div class="projectImg"><img src="{{project.img}}" alt="img" >
         <div class="btn flex-box">
-                <button (click)="navigateTo(project.gitHub)">GitHub</button>>
+                <button (click)="navigateTo(project.gitHub)">GitHub</button>
                 <button (click)="navigateTo(project.liveTest)">LiveTest</button>
         </div>
     </div>
@@ -13,9 +13,9 @@
         <h3>{{project.name}}</h3>
         <p> {{project.skills | translate}}</p>
        <span>{{ project.text | translate }}</span>
-    <div >
-        <button>GitHub</button>
-        <button>LiveTest</button>
+    <div>
+        <button (click)="navigateTo(project.gitHub)">GitHub</button>
+        <button (click)="navigateTo(project.liveTest)">LiveTest</button>
     </div>
     </div>
 </div>
