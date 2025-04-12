@@ -13,6 +13,7 @@ import { ToggleService } from '../toggle.service';
 })
 export class HeaderComponent {
    isOpen = inject(ToggleService)
+  //  @Input() isOpen!: boolean;
   
   constructor(private translate: TranslateService) {}
 
