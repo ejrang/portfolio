@@ -1,5 +1,5 @@
 git add .
-git commit -m "add global variable"
+git commit -m "add impressum"
 git push
 
 

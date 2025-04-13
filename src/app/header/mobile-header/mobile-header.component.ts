@@ -12,22 +12,13 @@ import { ToggleService } from '../../toggle.service';
 })
 
 export class MobileHeaderComponent {
-  @Output() isOpen = new EventEmitter<boolean>();
-  // isOpen = inject(ToggleService)
-  isClosing = false;
+  // @Output() isOpen = new EventEmitter<boolean>();
+  isOpen = inject(ToggleService)
+
 
 constructor( private translate: TranslateService) {
 }
 
-  close() {
-    this.isClosing = true; // Schließen-Animation starten
-    // setTimeout(() => {
-      this.isOpen.emit(false);
-      debugger; // Nach der Animation die Komponente schließen
-      this.isClosing = false; // Zustand zurücksetzen
-    // }, 500); // Dauer der Animation (0.5s)
-    // this.isOpen.isOpen = false; // Zustand zurücksetzen
-  }
 
   changeLanguage(lang: string) {
     this.translate.use(lang);

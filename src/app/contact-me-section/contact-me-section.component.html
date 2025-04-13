@@ -3,7 +3,7 @@
         <div class="text-container">
             <div class="flex contactMe " style="align-items: center;">
         <h2> {{ 'contact.heading' | translate }}</h2>
-        <img src="../../assets/icons/contactMe/Arrow.png" alt="" class="arrowDown">
+        <img src="./assets/icons/contactMe/Arrow.png" alt="" class="arrowDown">
             </div>
         <p class="infoText">{{ 'contact.description' | translate }}
         </p>
@@ -42,7 +42,7 @@
           />
         </div>
   
-        <div class="data">
+        <div class="data flex column">
           <input
             #email="ngModel"
             [(ngModel)]="contactData.email"
@@ -64,7 +64,7 @@
         </div>
       </div>
   
-      <div class="message">
+      <div class="message flex column">
         <textarea
           #message="ngModel"
           [(ngModel)]="contactData.message"
@@ -109,6 +109,10 @@
         />
       </div>
     </div>
+
+    <div *ngIf="emailSubmitted" class="notification" data-aos="fade-in">
+      <p>{{ 'contact.successMessage' | translate }}</p>
+    </div>
   </form>
   
 
@@ -123,6 +127,8 @@
              <a href="tel:01764348355">0176 4348355</a>
         </div>
         </div>
+
+   
 
         
 </div>

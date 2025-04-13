@@ -9,21 +9,21 @@ import { FooterComponent } from '../footer/footer.component';
 import { WhyMeSectionComponent } from '../why-me-section/why-me-section.component';
 import { CommonModule } from '@angular/common';
 import { ToggleService } from '../toggle.service';
+import { ImpressumComponent } from "../impressum/impressum.component";
 
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [HeaderComponent, 
-     HeroSectionComponent,
-     WhyMeSectionComponent ,
-     MySkillsSectionComponent,
-     MyProjectsSectionComponent,
-     QuotesSectionComponent,
-     ContactMeSectionComponent,
-     FooterComponent,
-     CommonModule
-    ],
+  imports: [HeaderComponent,
+    HeroSectionComponent,
+    WhyMeSectionComponent,
+    MySkillsSectionComponent,
+    MyProjectsSectionComponent,
+    QuotesSectionComponent,
+    ContactMeSectionComponent,
+    FooterComponent,
+    CommonModule, ImpressumComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

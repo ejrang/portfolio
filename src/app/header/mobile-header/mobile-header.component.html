@@ -1,8 +1,8 @@
-<div class="mobile-header" [class.closing]="isClosing">
-    <div  class="close" (click)= "close()"><img src="./assets/icons/header/close.png" alt="close"></div>
+<div class="mobile-header" [class.closing]="isOpen.isClosing">
+    <div  class="close" (click)= "isOpen.close()"><img src="./assets/icons/header/close.png" alt="close"></div>
 
     <div>
-        <div class="links-mobile" (click)= "close()">
+        <div class="links-mobile" (click)= "isOpen.close()">
             <a href="#whyMe">{{'header.whyMe' | translate }}</a>
             <a href="#skills">{{'header.skills' | translate }}</a>
             <a href="#projects">{{'header.projects' | translate }}</a>

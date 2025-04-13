@@ -16,11 +16,11 @@
         <a href="#" (click)="changeLanguage('en')">EN</a>
     </div>
 
-    <div class="menu-icon burger-menu-btn" (click)= "isOpen.isOpen= true">
+    <div class="menu-icon burger-menu-btn" (click)= "isOpen.isOpen = true">
         <img src="./assets/icons/header/menu.png" alt="">
     </div>
 </header>
 
-@if (isOpen) {
-<app-mobile-header class="d-none" (isOpen)="isOpen.isOpen= $event"></app-mobile-header>
+@if (isOpen.isOpen) {
+<app-mobile-header class="d-none" (isOpen)="isOpen.isOpen"></app-mobile-header>
 }

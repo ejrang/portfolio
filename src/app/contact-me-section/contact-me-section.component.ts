@@ -14,6 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ContactMeSectionComponent {
   privacyPolicy = false;
   http = inject(HttpClient);
+  emailSubmitted: boolean = false;
 
   emailTouched = false;
 
@@ -41,14 +42,11 @@ post = {
 };
 
 onSubmit(ngForm: NgForm) {
-
-  
   if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
     console.log("Läuft");
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
-
           ngForm.resetForm();
         },
         error: (error) => {
@@ -57,9 +55,23 @@ onSubmit(ngForm: NgForm) {
         complete: () => console.info('send post complete'),
       });
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
     ngForm.resetForm();
   }
+
+  this.emailSubmitted = true;
+
+  // Nachricht nach 4.5 Sekunden ausblenden
+  setTimeout(() => {
+    const notificationElement = document.querySelector('.notification');
+    if (notificationElement) {
+      notificationElement.classList.add('fade-out'); // Klasse für Animation hinzufügen
+    }
+  }, 450); // 4.5 Sekunden warten, bevor die Animation startet
+
+  // Nachricht nach 5 Sekunden entfernen
+  setTimeout(() => {
+    this.emailSubmitted = false;
+  }, 2000); // 5 Sekunden warten, bevor die Nachricht entfernt wird
 }
 
 }
