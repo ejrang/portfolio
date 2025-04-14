@@ -25,7 +25,7 @@ window.open(url);
       skills: 'Angular |  TypeScript |  HTML | CSS',
       text: 'myProjects.joinDescription',
       gitHub: 'https://github.com/OAhlke1/join',
-      liveTest:'',
+      liveTest:'https://join-249.developerakademie.net/board.html',
       animation: 'fade-up-right',
     },
     {
@@ -34,7 +34,7 @@ window.open(url);
       skills: 'JavaScript | HTML | CSS',
       text: 'myProjects.elPolloLocoDescription',
       gitHub: 'https://github.com/ejrang/EL-Pollo-Loco',
-      liveTest:'',
+      liveTest:'https://join-249.developerakademie.net/board.html',
       animation: 'fade-up-left',
     },
     {
@@ -43,7 +43,7 @@ window.open(url);
       skills: 'JavaScript | HTML |CSS',
       text: 'myProjects.pokedexDescription',
       gitHub: 'https://github.com/ejrang/Testprojekt/tree/main/Pokedex',
-      liveTest:'',
+      liveTest:'https://join-249.developerakademie.net/board.html',
       animation: 'fade-up-right',
     }
   ];

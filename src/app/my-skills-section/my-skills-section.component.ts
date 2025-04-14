@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ToggleService } from '../toggle.service';
 
 @Component({
   selector: 'app-my-skills-section',
@@ -10,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './my-skills-section.component.scss'
 })
 export class MySkillsSectionComponent {
+  inject = inject(ToggleService)
 
  img = [
 './assets/icons/mySkills/Angular.png',

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ToggleService } from '../toggle.service';
 
 @Component({
   selector: 'app-why-me-section',
@@ -9,5 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './why-me-section.component.scss'
 })
 export class WhyMeSectionComponent {
+inject = inject(ToggleService)
 
 }

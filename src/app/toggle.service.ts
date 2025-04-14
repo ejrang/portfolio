@@ -19,5 +19,12 @@ export class ToggleService {
   this.isOpen = false; // Zustand zurücksetzen
 }
 
+scrollToContact() {
+  const contactElement = document.getElementById('contact');
+  if (contactElement) {
+    contactElement.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 }
  
