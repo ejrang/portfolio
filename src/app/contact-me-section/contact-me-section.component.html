@@ -30,16 +30,21 @@
     data-aos-anchor-placement="top-bottom">
   
     <div class="flex contactForm">
-      <div>
-        <div class="data">
+      <div class="flex-space">
+        <div class="data flex column">
           <input
-            [(ngModel)]="contactData.name"
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="{{ 'contact.placeholderName' | translate }}"
-          />
+          #nameInput="ngModel" 
+          [(ngModel)]="contactData.name"
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="{{ 'contact.placeholderName' | translate }}"
+          (blur)="nameTouched = true"
+        />
+        @if (!nameInput.valid && (nameTouched || nameInput.touched)) {
+          <span style="color: red;">Please enter your name!</span>
+        }
         </div>
   
         <div class="data flex column">

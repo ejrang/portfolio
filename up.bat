@@ -1,5 +1,5 @@
 git add .
-git commit -m "add font"
+git commit -m "correct footer"
 git push
 
 

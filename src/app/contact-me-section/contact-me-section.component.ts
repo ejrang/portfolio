@@ -16,6 +16,7 @@ export class ContactMeSectionComponent {
   http = inject(HttpClient);
   emailSubmitted: boolean = false;
 
+  nameTouched: boolean = false;
   emailTouched = false;
 
 onBlurEmail() {
