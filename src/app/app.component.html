@@ -1,3 +1,7 @@
+<app-header [ngClass]="{'app-header': !isOpen.isOpen}"></app-header>
 
-<app-portfolio></app-portfolio>
-<router-outlet></router-outlet>
+<main class="flex-grow">
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>

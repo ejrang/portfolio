@@ -10,6 +10,7 @@ import { WhyMeSectionComponent } from '../why-me-section/why-me-section.componen
 import { CommonModule } from '@angular/common';
 import { ToggleService } from '../toggle.service';
 import { ImpressumComponent } from "../impressum/impressum.component";
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 
 @Component({
@@ -23,7 +24,7 @@ import { ImpressumComponent } from "../impressum/impressum.component";
     QuotesSectionComponent,
     ContactMeSectionComponent,
     FooterComponent,
-    CommonModule, ImpressumComponent],
+    CommonModule, ImpressumComponent,PrivacyPolicyComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

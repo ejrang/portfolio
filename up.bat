@@ -1,5 +1,5 @@
 git add .
-git commit -m "correct footer"
+git commit -m "integrate impressum in Portfolio"
 git push
 
 
