@@ -42,7 +42,7 @@
           placeholder="{{ 'contact.placeholderName' | translate }}"
           (blur)="nameTouched = true"
         />
-        @if (!nameInput.valid && (nameTouched || nameInput.touched)) {
+        @if (!nameInput.valid && nameInput.touched) {
           <span style="color: red;">Please enter your name!</span>
         }
         </div>
@@ -101,7 +101,7 @@
   
         <p>
           {{ 'contact.privacy-policy-pretext' | translate }}
-          <span style="color: #E15544;">{{ 'contact.privacy-policy' | translate }}</span>
+          <a routerLink="/privacy-policy" style="color: #E15544;">{{ 'contact.privacy-policy' | translate }}</a>
           {{ 'contact.privacy-policy-posttext' | translate }}
         </p>
       </div>

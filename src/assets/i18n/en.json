@@ -45,5 +45,12 @@
         "privacy-policy-posttext": " and accept the processing of my data.",
         "privacy-policy": " privacy policy",
         "button": "Send"
+    },
+    "impressum": {
+        "impressum": "Impressum",
+        "contact": "Contact",
+        "description": "Information according to § 5 TMG:",
+        "phone": "Phone",
+        "email": "Email"
     }
 }

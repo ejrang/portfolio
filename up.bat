@@ -1,5 +1,5 @@
 git add .
-git commit -m "integrate impressum in Portfolio"
+git commit -m "correct contactform"
 git push
 
 

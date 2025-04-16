@@ -14,6 +14,7 @@
 }
 
 .subline{
+
 h2{
     font-family: 'robotoMono';
     font-weight: 500;
@@ -24,3 +25,7 @@ h2{
     }
 }
 }
+
+#projects {
+    scroll-margin-top: 100px; /* passe den Wert an deinen Header an */
+  }

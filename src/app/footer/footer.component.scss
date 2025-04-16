@@ -3,6 +3,7 @@
     max-width: 1440px;
     padding: 50px 50px;
     font-family: 'robotoMono', sans-serif;
+    width: 90vw;
 
     @media(max-width: 768px){
         flex-direction: column-reverse;

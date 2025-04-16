@@ -43,7 +43,14 @@
         "placeholderMessage":"Deine Nachicht",
         "privacy-policy-pretext":"Ich habe die",
         "privacy-policy-posttext":" gelesen und akzeptiert bei Verarbeitung meiner Daten.",
-        "privacy-policy":" Datenschutzbestimmungen",
+        "privacy-policy":"Datenschutzbestimmungen",
         "button":"Senden"
+    },
+    "impressum": {
+        "impressum": "Impressum",
+        "contact": "Kontakt",
+        "description": "Angaben gemäß § 5 TMG:",
+        "phone":"Telefon",
+        "email":"E-Mail"
     }
 }
