@@ -11,6 +11,7 @@
 
 html{
     scroll-behavior: smooth;
+    // overflow: hidden
 }
 
 a{
@@ -45,6 +46,8 @@ body{
     align-items: center;
     background-color: #120b35; 
     overflow-x: hidden;
+    scrollbar-gutter: stable;
+    // border: 2px dashed red;
 }
 
 .padding{

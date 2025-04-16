@@ -24,13 +24,15 @@
 }
 
 .subline-mobile{
-    color: brown;
     font-size: 24px;
+    color: #E15544;
+    margin-left: 8px;
 
      @media(max-width: 992px){
      font-size: 18px;
      font-weight: 200;
      margin-top: 12px;
+     color: brown;
          }
 }
 

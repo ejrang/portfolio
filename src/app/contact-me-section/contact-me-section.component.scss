@@ -55,6 +55,7 @@ a{
 
 .privacy-policy{
     cursor: pointer;
+    margin-top: 15px;
     @media(max-width: 992px){
         width: 555px;
     }
@@ -402,5 +403,5 @@ input.error::placeholder {
 
   
 #contact {
-    scroll-margin-top: 400px; /* passe den Wert an deinen Header an */
+    scroll-margin-top: 40px; /* passe den Wert an deinen Header an */
   }
