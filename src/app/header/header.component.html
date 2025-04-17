@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" class="app-header">
     <div class="menu">
         <div class="logo"><a href="#hero"> EN</a></div>
 
@@ -16,7 +16,7 @@
         <a (click)="changeLanguage('en')">EN</a>
     </div>
 
-    <div class="menu-icon burger-menu-btn" (click)= "isOpen.isOpen = true">
+    <div class="menu-icon burger-menu-btn"  (click)="this.isOpen.close()" (click)= "isOpen.isOpen = true;">
         <img src="./assets/icons/header/menu.png" alt="">
     </div>
 </header>

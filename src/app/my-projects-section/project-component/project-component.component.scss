@@ -1,5 +1,10 @@
 
 .projectImg{
+
+    button{
+        cursor: pointer;
+    }
+
     img{
         width: 550px;
 
@@ -71,6 +76,7 @@
             background-color: #120B35;
             border: 1px solid #02F4BF;
             margin-right: 18px;
+            cursor: pointer;
 
             &:hover {
                 color: #02F4BF; 
@@ -82,6 +88,7 @@
             background-color:#02F4BF;
             border: 1px solid #02F4BF;
             margin-right: 18px;
+            cursor: pointer;
 
             &:hover {
                 transition: color 0.3s ease-in-out;
@@ -127,6 +134,7 @@
         border: 1px solid #02F4BF;
         margin: 16px 22px;
         transition: color 0.3s ease-in-out;
+        cursor: pointer;
 
         &:hover {
             color: #02F4BF; 
@@ -138,6 +146,7 @@
         background-color:#02F4BF;
         border: 1px solid #02F4BF;
         margin: 16px 22px;
+        cursor: pointer;
 
         &:hover {
             transition: color 0.3s ease-in-out;

@@ -5,7 +5,7 @@ header {
     // max-width: 1440px;
     position: unset;
     justify-content: space-between;
-    padding: 28px 32px;
+    padding: 28px 0px;
     color: #E15544;
     text-align: center;
     background-color: #120b35;
@@ -19,6 +19,17 @@ header {
     color: #E15544;
    }
 }
+
+.app-header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    max-width: 1442px;
+    width: 97%;
+ }
+
 
 .menu {
     display: flex;
@@ -66,7 +77,7 @@ header {
 }
 
 .language{
-              
+    cursor: pointer;
     height: 25px;
     font-size: 18px;
     font-weight: 700;
