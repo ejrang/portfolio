@@ -11,7 +11,9 @@ export class ToggleService {
 
  close() {
   if(!this.isOpen){
-  // document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    document.body.style.overflow = 'hidden';
+   }, 500);
 }
 
   if(this.isOpen){

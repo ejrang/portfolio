@@ -47,6 +47,7 @@ body{
     background-color: #120b35; 
     overflow-x: hidden;
     scrollbar-gutter: stable;
+    font-family: 'robotoMono',sans-serif;
     // border: 2px dashed red;
 }
 
@@ -71,8 +72,10 @@ body{
 
 .button {
     justify-content: flex-end;
+    font-family: 'robotoMono',sans-serif;
 
     button {
+        font-family: 'robotoMono',sans-serif;
         width: 170px;
         height: 52px;
         background-color: aqua;

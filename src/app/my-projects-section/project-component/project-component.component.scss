@@ -1,6 +1,5 @@
 
 .projectImg{
-
     button{
         cursor: pointer;
     }
@@ -72,6 +71,7 @@
     
         }
         :first-child{
+            font-family: 'robotoMono';
             color: #E15544;
             background-color: #120B35;
             border: 1px solid #02F4BF;
@@ -84,6 +84,7 @@
         }
     
         :last-child{
+            font-family: 'robotoMono';
             color: #120B35;
             background-color:#02F4BF;
             border: 1px solid #02F4BF;
@@ -115,11 +116,13 @@
 
 @media(max-width: 992px){
 .btn{
+    font-family: 'robotoMono';
     display: flex;
     justify-content: center;
     align-items: center;
 
     button{
+        font-family: 'robotoMono';
         text-decoration: none;
         padding: 16px 40px;
         cursor: pointer;

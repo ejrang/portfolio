@@ -1,4 +1,4 @@
-@import '../../assets/fonts/font.scss';
+// @import '../../assets/fonts/font.scss';
 
 header {
     display: flex;
@@ -6,6 +6,7 @@ header {
     position: unset;
     justify-content: space-between;
     padding: 28px 0px;
+    font-family: 'robotoMono',sans-serif;
     color: #E15544;
     text-align: center;
     background-color: #120b35;
@@ -77,20 +78,22 @@ header {
 }
 
 .language{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
     height: 25px;
     font-size: 18px;
     font-weight: 700;
+    margin-top: 7px;
 
-    :hover{
+    a:hover{
         color: #02F4bf;
+        cursor: pointer;
     }
 
     span{
         width: 6px;
         height: 28px;
         margin: 8px;
-        background-color: #E15544;
     }
 
     @media (max-width: 992px){
