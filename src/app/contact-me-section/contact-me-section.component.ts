@@ -33,7 +33,7 @@ contactData: any ={
 mailTest = true;
 
 post = {
-  endPoint: 'https://ejran-nahimzadah.developerakademie.net/sendMail.php',
+  endPoint: 'https://ejran-nahimzadah.com/sendMail.php',
   body: (payload: any) => JSON.stringify(payload),
   options: {
     headers: {
@@ -44,22 +44,29 @@ post = {
 };
 
 onSubmit(ngForm: NgForm) {
-  if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+  // if (ngForm.submitted && ngForm.form.valid) {
     console.log("Läuft");
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
           ngForm.resetForm();
+          this.confirmMessage()
         },
         error: (error) => {
           console.error(error);
         },
         complete: () => console.info('send post complete'),
       });
-  } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-    ngForm.resetForm();
-  }
+  // }
+  //  else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+  //   ngForm.resetForm();
+  //   
+  // }
 
+
+}
+
+confirmMessage(){
   this.emailSubmitted = true;
 
   // Nachricht nach 4.5 Sekunden ausblenden
@@ -74,6 +81,9 @@ onSubmit(ngForm: NgForm) {
   setTimeout(() => {
     this.emailSubmitted = false;
   }, 2000); // 5 Sekunden warten, bevor die Nachricht entfernt wird
+  
 }
 
 }
+
+

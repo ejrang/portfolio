@@ -5,6 +5,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Methods: POST");
         header("Access-Control-Allow-Headers: content-type");
+        header("Access-Control-Allow-Credentials: true");
         exit;
         case("POST"): //Send the email;
             header("Access-Control-Allow-Origin: *");

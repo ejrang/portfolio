@@ -22,8 +22,9 @@ export class ToggleService {
    setTimeout(() => {
     // this.isOpen.emit(false);
      this.isClosing = false; // Zustand zurücksetzen
+     this.isOpen = false; // Zustand zurücksetzen
    }, 500); // Dauer der Animation (0.5s)
-  this.isOpen = false; // Zustand zurücksetzen
+
   }
 }
 
