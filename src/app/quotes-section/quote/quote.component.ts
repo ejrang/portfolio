@@ -12,17 +12,17 @@ export class QuoteComponent {
 
   quote: {name: string; project: string; text: string; }[] = [
     {
-      name: 'Noah Mueller',
-      project: 'Project Shakie',
+      name: 'Oscar Ahlke',
+      project: 'Project Join',
       text: 'comment.commentNoah',
     },
     {
-      name: 'Evelyn Marx',
-      project: 'Project El Pollo Loco',
+      name: 'Patrick Offermanns',
+      project: 'Project Join',
       text: 'comment.commentEveln',
     },
     {
-      name: 'James Rugman',
+      name: 'Sebastian Scoverik',
       project: 'Project Join',
       text: 'comment.commentJames',
     }
